@@ -1,0 +1,90 @@
+CONTIKI?=/home/renzo/Documents/TCC/contiki-3.0
+
+CONTIKIDIRS += ../contiki-sdn/
+CONTIKIDIRS += ../tests/
+CONTIKIDIRS += ../contiki-sdn/collect-sdn/
+CONTIKIDIRS += ../sdn-common/
+CONTIKIDIRS += ../contiki-sdn/sdn-cd/
+CONTIKIDIRS += ../contiki-sdn/sdn-nd/
+
+CONTIKI_SOURCEFILES += sdn-core.c sdn-send.c sdn-network.c sdn-receive.c  \
+            sdn-packetbuf.c dummy-neighbor-discovery.c dummy-controller-discovery.c sdn-neighbor-table.c\
+            sdn-debug.c data-flow-table.c control-flow-table.c sdn-addr.c flow-table-tests.c sdn-queue.c \
+            sdn-process-packets.c sdn-unknown-route.c naive-nd.c sdn-send-packet.c src-route-tests.c null-cd.c energy-manager.c\
+            naive-directed-cd.c manage-info.c symmcheck-cd.c improved-naive-nd.c ids-data.c\
+            sdn-node-security-module.c
+
+ifeq ($(TARGET),srf06-cc26xx)
+  CONTIKI_SOURCEFILES += protocol-commutator-3.x.c
+else
+  CONTIKI_SOURCEFILES += protocol-commutator.c
+endif
+
+# Need to comment this line if "CONTIKI_WITH_RIME = 0".
+# It is necessary to change project-conf also.
+CONTIKI_SOURCEFILES += collect-nd.c collectsdn.c collect-cd.c
+
+DEFINES+=PROJECT_CONF_H=\"project-conf.h\"
+
+# Activates the Energy Manager module
+# DEFINES+=ENERGY_MANAGER
+DEFINES+=NETSTACK_CONF_RDC_CHANNEL_CHECK_RATE=16
+
+#Defines which platform to be compiled.
+CFLAGS += -DSDN_ENABLED_NODE
+# Others [SDN_CONTROLLER_NODE, SDN_CONTROLLER_PC]
+
+#CFLAGS += -DDEBUG_SDN
+CFLAGS += -DSDN_METRIC
+#CFLAGS += -DDEMO
+
+#Management flag
+CFLAGS += -DMANAGEMENT
+
+#IDS flag
+#CFLAGS += -DIDS
+
+##################################
+# CP detection, main flag
+CFLAGS += -DCP_DETECT
+##################################
+# Flags for distributed detection
+CFLAGS += -DDIST_DETECT
+CFLAGS += -DTRANS_TS
+# CFLAGS += -DRX_CTRL_PCKT
+##################################
+# Flags for centralized detection
+CFLAGS += -DCENTR_DETECT
+CFLAGS += -DCTRL_OV_DETECT
+CFLAGS += -DDATA_DR_DETECT
+##################################
+# Monitoring time (centr)
+# CFLAGS += -DMONETWSEC
+CFLAGS += -DMSIXTYSEC
+# CFLAGS += -DMTHIRSEC
+# CFLAGS += -DMTENSEC
+##################################
+# Sampling time (distr)
+# CFLAGS += -DSONETWSEC
+CFLAGS += -DSSIXTYSEC
+# CFLAGS += -DSTHIRSEC
+# CFLAGS += -DSTENSEC
+##################################
+# Attack period 
+CFLAGS += -DATTACK_SIXTY
+# CFLAGS += -DATTACK_THIRTY
+# CFLAGS += -DATTACK_TEN
+# CFLAGS += -DATTACK_ONE
+##################################
+
+
+CONTIKI_WITH_IPV6 = 0
+CONTIKI_WITH_IPV4 = 0
+CONTIKI_WITH_RIME = 1
+# CONTIKI_NO_NET = 1
+
+TARGET_LIBFILES = -lm
+
+all: enabled-node sink-node management-sink attack-fdff attack-two 
+
+include $(CONTIKI)/Makefile.include

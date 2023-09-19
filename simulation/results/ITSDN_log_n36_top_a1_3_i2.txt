@@ -1,0 +1,122 @@
+ WARN [main] (Cooja.java:3181) - JAVA_HOME environment variable not set, Cooja motes may not compile
+ INFO [main] (Cooja.java:1324) - > Starting Cooja
+ INFO [main] (Cooja.java:2865) - External tools default settings: /external_tools_linux_64.config
+ INFO [main] (Cooja.java:2895) - External tools user settings: /home/gnunez/.cooja.user.properties
+ INFO [main] (Simulation.java:420) - Simulation random seed: -4579347003705417069
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/controller-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/sink-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/management-sink.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/attack-fdff.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/attack-fdff.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/gnunez/it-sdn-Gustavo/simulation/../applications/attack-fdff.sky
+ INFO [main] (Cooja.java:1790) - Visualized plugin was not started: class org.contikios.cooja.plugins.SimControl
+ INFO [main] (Cooja.java:1790) - Visualized plugin was not started: class org.contikios.cooja.plugins.Visualizer
+ INFO [main] (Cooja.java:1790) - Visualized plugin was not started: class org.contikios.cooja.plugins.LogListener
+ INFO [main] (Cooja.java:1790) - Visualized plugin was not started: class org.contikios.cooja.plugins.TimeLine
+ INFO [main] (Cooja.java:1790) - Visualized plugin was not started: class org.contikios.cooja.plugins.Notes
+ INFO [main] (ScriptRunner.java:429) - Test script deactivated
+ INFO [main] (LogScriptEngine.java:265) - Script timeout in 18000000 ms
+ INFO [main] (ScriptRunner.java:386) - Test script activated
+ INFO [Thread-2] (Simulation.java:252) - Simulation main loop started, system time: 1680382820386
+ INFO [main] (SerialSocketServer.java:389) - Listening on port: 60002
+ INFO [main] (ScriptRunner.java:429) - Test script deactivated
+ INFO [main] (LogScriptEngine.java:265) - Script timeout in 18000000 ms
+ INFO [main] (ScriptRunner.java:386) - Test script activated
+Exception in thread "AWT-EventQueue-1" java.lang.NullPointerException
+	at org.contikios.cooja.serialsocket.SerialSocketServer$6.actionPerformed(SerialSocketServer.java:652)
+	at javax.swing.Timer.fireActionPerformed(Timer.java:313)
+	at javax.swing.Timer$DoPostEvent.run(Timer.java:245)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at org.GNOME.Accessibility.AtkWrapper$6.dispatchEvent(AtkWrapper.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+ INFO [Thread-6] (SerialSocketServer.java:478) - Forwarder: socket -> serial port
+ INFO [Thread-3] (SerialSocketServer.java:425) - Client connected: /127.0.0.1
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 5.00%, done in 4577.2 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 5.00%, done in 4576.4 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 10.00%, done in 4356.9 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 10.00%, done in 4356.5 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 15.00%, done in 4097.8 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 15.00%, done in 4097.6 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 20.00%, done in 3873.2 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 20.00%, done in 3873.1 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 25.00%, done in 3656.6 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 25.00%, done in 3656.5 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 30.00%, done in 3393.0 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 30.00%, done in 3392.9 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 35.00%, done in 3131.0 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 35.00%, done in 3130.9 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 40.00%, done in 2882.5 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 40.00%, done in 2882.4 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 45.00%, done in 2626.6 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 45.00%, done in 2626.5 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 50.00%, done in 2375.9 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 50.00%, done in 2375.9 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 55.00%, done in 2145.8 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 55.00%, done in 2145.8 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 60.00%, done in 1907.9 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 60.00%, done in 1907.9 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 65.00%, done in 1673.2 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 65.00%, done in 1673.2 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 70.00%, done in 1435.2 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 70.00%, done in 1435.1 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 75.00%, done in 1193.5 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 75.00%, done in 1193.4 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 80.00%, done in 953.7 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 80.00%, done in 953.7 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 85.00%, done in 715.0 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 85.00%, done in 715.0 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 90.00%, done in 475.8 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 90.00%, done in 475.8 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 95.00%, done in 237.7 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 95.00%, done in 237.6 sec
+ INFO [Thread-2] (LogScriptEngine.java:375) - Timeout event @ 18000000000
+ INFO [Thread-2] (Simulation.java:311) - Simulation main loop stopped, system time: 1680387562031	Duration: 4741645 ms	Simulated time 18000000 ms	Ratio 3.796150913870608
+ INFO [Thread-1] (LogScriptEngine.java:309) - Test script finished
+ INFO [AWT-EventQueue-1] (ScriptRunner.java:429) - Test script deactivated
+ INFO [Thread-3] (SerialSocketServer.java:429) - Listening thread shut down: Socket closed
+ INFO [Thread-6] (SerialSocketServer.java:497) - Socket closed
+ INFO [Thread-6] (SerialSocketServer.java:501) - End of Stream
+ INFO [Thread-5] (LogScriptEngine.java:309) - Test script finished
+ INFO [AWT-EventQueue-1] (ScriptRunner.java:429) - Test script deactivated

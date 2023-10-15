@@ -6,7 +6,7 @@ set -x
 # Simulation set configuration
 MIN_ITER=1
 MAX_ITER=3
-COOJA_INSTANCES=3 #max simulations running in parallel
+COOJA_INSTANCES=1 #max simulations running in parallel
 COOJA_CURRENT_INSTANCE=1
 
 # nodes_v=(36 100)
@@ -38,7 +38,7 @@ run_cooja() {
 # $4 => number employed to choose a different cooja directory for
 #				each parallel simulation
 	# (
-		cd "${contiki_dir}${4}${cooja_dir}/dist"
+		cd "$HOME/Documents/TCC/contiki-3.0/tools/cooja/dist"
 		java -mx12120m -jar cooja.jar -nogui="$1" > $2 2>&1 &
 
 		# append the pid of the last process (i.e. $!) to the list

@@ -31,6 +31,11 @@
 /* flows to their neighbors.                                            */
 /************************************************************************/
 
+
+/*
+  Realiza o Ataque de fdff, momento do ATTACK_TRIGGER. SDN_SIMULATION_N_SINKS numero de sink nodes
+*/
+
 #include <stdio.h>
 #include "contiki.h"
 #include "sdn-core.h"
@@ -54,7 +59,7 @@
 
 #define SENSING_AT_SECONDS 60
 #define IDS_TIMER 120
-#define ATTACK_TRIGGER 14000
+#define ATTACK_TRIGGER 14000 //4horas
 // #define ATTACK_TRIGGER 28800
 #ifdef ATTACK_SIXTY
 #define ATTACK_PERIOD 60
@@ -74,7 +79,7 @@ PROCESS(sdn_test_process, "Contiki SDN example process");
 AUTOSTART_PROCESSES(&sdn_test_process);
 
 
-uint16_t temp_flowid[4];
+uint16_t temp_flowid[6]; //depende do numero de vizinhos, vai mudar. Para uma frequencia maior tera mais vizinhos
 static struct ctimer attack_timer;
 
 
@@ -105,7 +110,7 @@ static void create_false_flows() {
   
   uint8_t n;
 
-  for(n = 0; n <= 3; n++) {
+  for(n = 0; n <= 5; n++) {
     if ((temp_flowid[n] > 0)) {
       //printf("Removing flow: %u\n", temp_flowid[n]);
       sdn_dataflow_remove(temp_flowid[n]);  
@@ -115,6 +120,8 @@ static void create_false_flows() {
   sdn_dataflow_print();
 
 /*-----------Maybe it wont be necessary-----------------------*/
+  MEMB(new_neighbor_table_memb, struct sdn_neighbor_entry, 2);
+
   struct collect_neighbor_list neighbors_copy_list;
   
   struct collect_conn tc;
@@ -122,29 +129,68 @@ static void create_false_flows() {
   memcpy(&tc, collect_pointer(), sizeof(struct collect_conn));
   
   neighbors_copy_list.list = collect_neighbor_list(&tc.neighbor_list);
-  
+  // Allocate memory for the new entries.
+  struct sdn_neighbor_entry *n1 = memb_alloc(&new_neighbor_table_memb);
+  struct sdn_neighbor_entry *n2 = memb_alloc(&new_neighbor_table_memb);
+
+
+  // Check if memory allocation was successful.
+  if (n1 == NULL || n2 == NULL) {
+      SDN_DEBUG("Failed to allocate memory for new neighbor entries!\n");
+      return; // or handle the error as appropriate
+  }
+
+  // Set the metrics.
+  n1->metric = 0;
+  n2->metric = 0;
+
+  // Allocate extra_info (if necessary).
+  n1->extra_info = memb_alloc(NULL); // Assuming the correct memory block is passed
+  n2->extra_info = memb_alloc(NULL); // or NULL if it's not required
+
+  // Set the neighbor addresses.
+  sdnaddr_t neighbor_addr1 = {{0x1C, 0x00}};// adiciona o endereco 28
+  sdnaddr_t neighbor_addr2 = {{0x1D, 0x00}};// adiciona o endereco 29
+
+
+  sdnaddr_copy(&n1->neighbor_addr, &neighbor_addr1);
+  sdnaddr_copy(&n2->neighbor_addr, &neighbor_addr2);
+
+  // Add the new entries to the list.
+  list_add(neighbors_copy_list.list, n1);
+  list_add(neighbors_copy_list.list, n2);
+
+  //criar uma lista hardcooded
+  //sdn_neighbor_table_insert(sdnaddr_t neighbor_addr, struct memb* m)
  /*----------------------------------------------------------*/
  
 
-  struct sdn_neighbor_entry *neighbor;
-  struct sdn_neighbor_entry *neighbor_next;
+  struct sdn_neighbor_entry *neighbor_copy;
+
+  struct sdn_neighbor_entry *neighbor_copy_next;
+
 
   static char false_data[10];
 
   n = 0;
 
-  for(neighbor = sdn_neighbor_table_head(); neighbor != NULL; ) {
+  for(neighbor_copy = list_head(neighbors_copy_list.list); neighbor_copy != NULL; ) {
     flowid_t random_flow;
-    neighbor_next = list_item_next(neighbor);
+    neighbor_copy_next = list_item_next(neighbor_copy);
+
     random_flow = 10 + (random_rand() % 1000);
     temp_flowid[n] = random_flow;
-    sdn_dataflow_insert(random_flow, neighbor->neighbor_addr, SDN_ACTION_FORWARD);
+    sdn_dataflow_insert(random_flow, neighbor_copy->neighbor_addr, SDN_ACTION_FORWARD);
     printf("Sending data to false flow: %d\n", random_flow);
+
+    printf("Copia da lista endereco vizinho : %d\n", neighbor_copy->neighbor_addr);
+
     // SDN_DEBUG("Sending data to false flow: %d\n", random_flow);
     sdn_send((uint8_t*) false_data, 10, random_flow);
-    neighbor = neighbor_next;
+    neighbor_copy = neighbor_copy_next;
+
     n++;
-  }
+  } 
 
   ctimer_set(&attack_timer, ATTACK_PERIOD * CLOCK_SECOND, create_false_flows, NULL); 
 }

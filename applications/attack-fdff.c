@@ -79,7 +79,7 @@ PROCESS(sdn_test_process, "Contiki SDN example process");
 AUTOSTART_PROCESSES(&sdn_test_process);
 
 
-uint16_t temp_flowid[6]; //depende do numero de vizinhos, vai mudar. Para uma frequencia maior tera mais vizinhos
+uint16_t temp_flowid[4]; //depende do numero de vizinhos, vai mudar. Para uma frequencia maior tera mais vizinhos
 static struct ctimer attack_timer;
 
 
@@ -110,7 +110,7 @@ static void create_false_flows() {
   
   uint8_t n;
 
-  for(n = 0; n <= 5; n++) {
+  for(n = 0; n <= 3; n++) {
     if ((temp_flowid[n] > 0)) {
       //printf("Removing flow: %u\n", temp_flowid[n]);
       sdn_dataflow_remove(temp_flowid[n]);  
@@ -120,7 +120,7 @@ static void create_false_flows() {
   sdn_dataflow_print();
 
 /*-----------Maybe it wont be necessary-----------------------*/
-  MEMB(new_neighbor_table_memb, struct sdn_neighbor_entry, 2);
+  MEMB(new_neighbor_table_memb, struct sdn_neighbor_entry, 4);
 
   struct collect_neighbor_list neighbors_copy_list;
   
@@ -132,10 +132,12 @@ static void create_false_flows() {
   // Allocate memory for the new entries.
   struct sdn_neighbor_entry *n1 = memb_alloc(&new_neighbor_table_memb);
   struct sdn_neighbor_entry *n2 = memb_alloc(&new_neighbor_table_memb);
+  struct sdn_neighbor_entry *n3 = memb_alloc(&new_neighbor_table_memb);
+  struct sdn_neighbor_entry *n4 = memb_alloc(&new_neighbor_table_memb);
 
 
   // Check if memory allocation was successful.
-  if (n1 == NULL || n2 == NULL) {
+  if (n1 == NULL || n2 == NULL || n3 == NULL || n4 == NULL) {
       SDN_DEBUG("Failed to allocate memory for new neighbor entries!\n");
       return; // or handle the error as appropriate
   }
@@ -143,22 +145,34 @@ static void create_false_flows() {
   // Set the metrics.
   n1->metric = 0;
   n2->metric = 0;
+  n3->metric = 0;
+  n4->metric = 0;
 
   // Allocate extra_info (if necessary).
   n1->extra_info = memb_alloc(NULL); // Assuming the correct memory block is passed
   n2->extra_info = memb_alloc(NULL); // or NULL if it's not required
+  n3->extra_info = memb_alloc(NULL); // or NULL if it's not required
+  n4->extra_info = memb_alloc(NULL); // or NULL if it's not required
 
   // Set the neighbor addresses.
-  sdnaddr_t neighbor_addr1 = {{0x1C, 0x00}};// adiciona o endereco 28
-  sdnaddr_t neighbor_addr2 = {{0x1D, 0x00}};// adiciona o endereco 29
+  sdnaddr_t neighbor_addr1 = {{0x08, 0x00}};// adiciona o endereco 08
+  sdnaddr_t neighbor_addr2 = {{0x17, 0x00}};// adiciona o endereco 23
+  sdnaddr_t neighbor_addr3 = {{0x1C, 0x00}};// adiciona o endereco 28
+  sdnaddr_t neighbor_addr4 = {{0x1D, 0x00}};// adiciona o endereco 29
 
 
   sdnaddr_copy(&n1->neighbor_addr, &neighbor_addr1);
   sdnaddr_copy(&n2->neighbor_addr, &neighbor_addr2);
+  sdnaddr_copy(&n3->neighbor_addr, &neighbor_addr3);
+  sdnaddr_copy(&n4->neighbor_addr, &neighbor_addr4);
+
 
   // Add the new entries to the list.
-  list_add(neighbors_copy_list.list, n1);
-  list_add(neighbors_copy_list.list, n2);
+  // list_add(neighbors_copy_list.list, n1);
+  // list_add(neighbors_copy_list.list, n2);
+  // list_add(neighbors_copy_list.list, n3);
+  // list_add(neighbors_copy_list.list, n4);
+
 
   //criar uma lista hardcooded
   //sdn_neighbor_table_insert(sdnaddr_t neighbor_addr, struct memb* m)

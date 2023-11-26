@@ -5,7 +5,7 @@ set -x
 
 # Simulation set configuration
 MIN_ITER=1
-MAX_ITER=3
+MAX_ITER=10
 COOJA_INSTANCES=1 #max simulations running in parallel
 COOJA_CURRENT_INSTANCE=1
 
@@ -38,7 +38,7 @@ run_cooja() {
 # $4 => number employed to choose a different cooja directory for
 #				each parallel simulation
 	# (
-		cd "$HOME/Documents/TCC/contiki-3.0/tools/cooja/dist"
+		cd "/home/renzo/contiki-3.0/tools/cooja/dist"
 		java -mx12120m -jar cooja.jar -nogui="$1" > $2 2>&1 &
 
 		# append the pid of the last process (i.e. $!) to the list
@@ -139,7 +139,7 @@ for nnodes in "${nodes_v[@]}"; do
 						make TARGET=sky -f Makefile_enabled_node management-sink
 						
 						make TARGET=sky clean -f Makefile_enabled_node
-						make TARGET=sky -f Makefile_enabled_node attack-one
+						make TARGET=sky -f Makefile_enabled_node attack-fdff
 
 						# make clean -f Makefile_enabled_node
 						# make -f Makefile_enabled_node attack-two

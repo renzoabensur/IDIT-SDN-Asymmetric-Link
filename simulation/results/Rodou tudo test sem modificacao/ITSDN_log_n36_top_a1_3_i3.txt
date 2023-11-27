@@ -2,7 +2,7 @@
  INFO [main] (Cooja.java:1324) - > Starting Cooja
  INFO [main] (Cooja.java:2865) - External tools default settings: /external_tools_linux_64.config
  INFO [main] (Cooja.java:2895) - External tools user settings: /home/renzo/.cooja.user.properties
- INFO [main] (Simulation.java:420) - Simulation random seed: -7714572547572161294
+ INFO [main] (Simulation.java:420) - Simulation random seed: -763511574222240103
  INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/controller-node.sky
  INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/sink-node.sky
  INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
@@ -45,78 +45,270 @@
  INFO [main] (Cooja.java:1790) - Visualized plugin was not started: class org.contikios.cooja.plugins.TimeLine
  INFO [main] (Cooja.java:1790) - Visualized plugin was not started: class org.contikios.cooja.plugins.Notes
  INFO [main] (ScriptRunner.java:429) - Test script deactivated
-Warning: Nashorn engine is planned to be removed from a future JDK release
  INFO [main] (LogScriptEngine.java:265) - Script timeout in 18000000 ms
  INFO [main] (ScriptRunner.java:386) - Test script activated
- INFO [Thread-1] (Simulation.java:252) - Simulation main loop started, system time: 1695762560340
+ INFO [Thread-2] (Simulation.java:252) - Simulation main loop started, system time: 1701020986231
  INFO [main] (SerialSocketServer.java:389) - Listening on port: 60003
  INFO [main] (ScriptRunner.java:429) - Test script deactivated
-Warning: Nashorn engine is planned to be removed from a future JDK release
  INFO [main] (LogScriptEngine.java:265) - Script timeout in 18000000 ms
  INFO [main] (ScriptRunner.java:386) - Test script activated
-Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+Exception in thread "AWT-EventQueue-1" java.lang.NullPointerException
 	at org.contikios.cooja.serialsocket.SerialSocketServer$6.actionPerformed(SerialSocketServer.java:652)
-	at java.desktop/javax.swing.Timer.fireActionPerformed(Timer.java:317)
-	at java.desktop/javax.swing.Timer$DoPostEvent.run(Timer.java:249)
-	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
-	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
-	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
-	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
-	at java.base/java.security.AccessController.doPrivileged(Native Method)
-	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
-	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:740)
-	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
-	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
-	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
-	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
-	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
-	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
- INFO [Thread-4] (SerialSocketServer.java:478) - Forwarder: socket -> serial port
- INFO [Thread-2] (SerialSocketServer.java:425) - Client connected: /127.0.0.1
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 5.00%, done in 7488.7 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 5.00%, done in 7487.2 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 10.00%, done in 7199.2 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 10.00%, done in 7198.5 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 15.00%, done in 6777.5 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 15.00%, done in 6777.0 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 20.00%, done in 6310.9 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 20.00%, done in 6310.6 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 25.00%, done in 5892.3 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 25.00%, done in 5892.2 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 30.00%, done in 5484.4 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 30.00%, done in 5484.2 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 35.00%, done in 5074.0 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 35.00%, done in 5073.9 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 40.00%, done in 4667.4 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 40.00%, done in 4667.3 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 45.00%, done in 4282.7 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 45.00%, done in 4282.6 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 50.00%, done in 3886.3 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 50.00%, done in 3886.2 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 55.00%, done in 3494.7 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 55.00%, done in 3494.7 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 60.00%, done in 3104.6 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 60.00%, done in 3104.5 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 65.00%, done in 2715.6 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 65.00%, done in 2715.5 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 70.00%, done in 2327.3 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 70.00%, done in 2327.3 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 75.00%, done in 1939.1 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 75.00%, done in 1939.0 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 80.00%, done in 1551.3 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 80.00%, done in 1551.3 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 85.00%, done in 1163.5 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 85.00%, done in 1163.5 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 90.00%, done in 775.3 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 90.00%, done in 775.3 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 95.00%, done in 387.3 sec
- INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 95.00%, done in 387.2 sec
- INFO [Thread-1] (LogScriptEngine.java:375) - Timeout event @ 18000000000
- INFO [Thread-1] (Simulation.java:311) - Simulation main loop stopped, system time: 1695770299644	Duration: 7739304 ms	Simulated time 18000000 ms	Ratio 2.3257905362032556
- INFO [Thread-0] (LogScriptEngine.java:309) - Test script finished
- INFO [AWT-EventQueue-0] (ScriptRunner.java:429) - Test script deactivated
- INFO [Thread-4] (SerialSocketServer.java:497) - Socket closed
- INFO [Thread-4] (SerialSocketServer.java:501) - End of Stream
- INFO [Thread-2] (SerialSocketServer.java:429) - Listening thread shut down: Socket closed
- INFO [Thread-3] (LogScriptEngine.java:309) - Test script finished
- INFO [AWT-EventQueue-0] (ScriptRunner.java:429) - Test script deactivated
+	at javax.swing.Timer.fireActionPerformed(Timer.java:313)
+	at javax.swing.Timer$DoPostEvent.run(Timer.java:245)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at org.GNOME.Accessibility.AtkWrapper$6.dispatchEvent(AtkWrapper.java:717)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+ INFO [Thread-6] (SerialSocketServer.java:478) - Forwarder: socket -> serial port
+ INFO [Thread-3] (SerialSocketServer.java:425) - Client connected: /127.0.0.1
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 5,00%, done in 6686,1 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 5,00%, done in 6684,7 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 10,00%, done in 6387,0 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 10,00%, done in 6386,3 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 15,00%, done in 5997,2 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 15,00%, done in 5996,7 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 20,00%, done in 5604,1 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 20,00%, done in 5603,8 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 25,00%, done in 5227,2 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 25,00%, done in 5227,0 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 30,00%, done in 4864,2 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 30,00%, done in 4864,0 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 35,00%, done in 4508,6 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 35,00%, done in 4508,5 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 40,00%, done in 4159,9 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 40,00%, done in 4159,7 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 45,00%, done in 3807,0 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 45,00%, done in 3806,9 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 50,00%, done in 3452,6 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 50,00%, done in 3452,5 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 55,00%, done in 3097,7 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 55,00%, done in 3097,6 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 60,00%, done in 2749,9 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 60,00%, done in 2749,8 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 65,00%, done in 2404,4 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 65,00%, done in 2404,4 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 70,00%, done in 2059,8 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 70,00%, done in 2059,8 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 75,00%, done in 1716,0 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 75,00%, done in 1715,9 sec
+MSP430: *** IOUnit read from non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3b6
+  memb_alloc (strncmp.c) called from PC: $044ec (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 4889)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5004)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5039)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6825)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
+MSP430: *** IOUnit write to non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3be
+  memb_alloc (strncmp.c) called from PC: $044ec (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 4895)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5010)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5045)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6831)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
+MSP430: *** IOUnit read from non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3b6
+  memb_alloc (strncmp.c) called from PC: $044f6 (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 4950)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5065)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5100)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6886)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
+MSP430: *** IOUnit write to non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3be
+  memb_alloc (strncmp.c) called from PC: $044f6 (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 4956)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5071)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5106)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6892)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
+MSP430: *** IOUnit read from non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3b6
+  memb_alloc (strncmp.c) called from PC: $04500 (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 5011)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5126)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5161)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6947)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
+MSP430: *** IOUnit write to non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3be
+  memb_alloc (strncmp.c) called from PC: $04500 (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 5017)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5132)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5167)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6953)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
+MSP430: *** IOUnit read from non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3b6
+  memb_alloc (strncmp.c) called from PC: $0450a (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 5072)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5187)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5222)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 7008)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
+MSP430: *** IOUnit write to non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3be
+  memb_alloc (strncmp.c) called from PC: $0450a (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 5078)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5193)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5228)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 7014)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
+MSP430: *** IOUnit read from non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3b6
+  memb_alloc (strncmp.c) called from PC: $044ec (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 4889)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5004)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5039)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6825)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
+MSP430: *** IOUnit write to non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3be
+  memb_alloc (strncmp.c) called from PC: $044ec (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 4895)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5010)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5045)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6831)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
+MSP430: *** IOUnit read from non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3b6
+  memb_alloc (strncmp.c) called from PC: $044f6 (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 4950)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5065)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5100)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6886)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
+MSP430: *** IOUnit write to non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3be
+  memb_alloc (strncmp.c) called from PC: $044f6 (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 4956)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5071)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5106)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6892)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
+MSP430: *** IOUnit read from non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3b6
+  memb_alloc (strncmp.c) called from PC: $04500 (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 5011)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5126)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5161)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6947)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
+MSP430: *** IOUnit write to non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3be
+  memb_alloc (strncmp.c) called from PC: $04500 (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 5017)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5132)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5167)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6953)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
+MSP430: *** IOUnit read from non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3b6
+  memb_alloc (strncmp.c) called from PC: $0450a (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 5072)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5187)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5222)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 7008)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
+MSP430: *** IOUnit write to non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3be
+  memb_alloc (strncmp.c) called from PC: $0450a (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 5078)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5193)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5228)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 7014)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
+MSP430: *** IOUnit read from non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3b6
+  memb_alloc (strncmp.c) called from PC: $044ec (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 4889)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5004)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5039)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6825)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
+MSP430: *** IOUnit write to non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3be
+  memb_alloc (strncmp.c) called from PC: $044ec (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 4895)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5010)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5045)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6831)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
+MSP430: *** IOUnit read from non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3b6
+  memb_alloc (strncmp.c) called from PC: $044f6 (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 4950)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5065)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5100)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6886)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
+MSP430: *** IOUnit write to non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3be
+  memb_alloc (strncmp.c) called from PC: $044f6 (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 4956)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5071)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5106)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6892)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
+MSP430: *** IOUnit read from non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3b6
+  memb_alloc (strncmp.c) called from PC: $04500 (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 5011)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5126)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5161)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6947)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
+MSP430: *** IOUnit write to non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3be
+  memb_alloc (strncmp.c) called from PC: $04500 (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 5017)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5132)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5167)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6953)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
+MSP430: *** IOUnit read from non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3b6
+  memb_alloc (strncmp.c) called from PC: $0450a (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 5072)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5187)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5222)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 7008)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
+MSP430: *** IOUnit write to non-existent IO at $0040
+Stack Trace: number of calls: 5 PC: $0a3be
+  memb_alloc (strncmp.c) called from PC: $0450a (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09ac2 (elapsed: 5078)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eba (elapsed: 5193)
+  call_process (local in process.c) called from PC: $0a05c (elapsed: 5228)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 7014)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 80,00%, done in 1372,2 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 80,00%, done in 1372,1 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 85,00%, done in 1029,6 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 85,00%, done in 1029,6 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 90,00%, done in 686,1 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 90,00%, done in 686,1 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 95,00%, done in 343,1 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 95,00%, done in 343,0 sec
+ INFO [Thread-2] (LogScriptEngine.java:375) - Timeout event @ 18000000000
+ INFO [Thread-2] (Simulation.java:311) - Simulation main loop stopped, system time: 1701027849002	Duration: 6862771 ms	Simulated time 18000000 ms	Ratio 2.622847243482261
+ INFO [Thread-1] (LogScriptEngine.java:309) - Test script finished
+ INFO [AWT-EventQueue-1] (ScriptRunner.java:429) - Test script deactivated
+ INFO [Thread-3] (SerialSocketServer.java:429) - Listening thread shut down: Socket closed
+ INFO [Thread-6] (SerialSocketServer.java:497) - Socket closed
+ INFO [Thread-6] (SerialSocketServer.java:501) - End of Stream
+ INFO [Thread-5] (LogScriptEngine.java:309) - Test script finished
+ INFO [AWT-EventQueue-1] (ScriptRunner.java:429) - Test script deactivated

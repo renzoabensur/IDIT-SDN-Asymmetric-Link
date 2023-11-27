@@ -168,7 +168,7 @@ static void create_false_flows() {
 
 
   // Add the new entries to the list.
-  // list_add(neighbors_copy_list.list, n1);
+  list_add(neighbors_copy_list.list, n1);
   // list_add(neighbors_copy_list.list, n2);
   // list_add(neighbors_copy_list.list, n3);
   // list_add(neighbors_copy_list.list, n4);
@@ -183,12 +183,17 @@ static void create_false_flows() {
 
   struct sdn_neighbor_entry *neighbor_copy_next;
 
+  //remove 1 vizinho normal e adixiona 1 vizinho frequncia maior
+
+  neighbor_copy = list_head(neighbors_copy_list.list);
+  neighbor_copy = list_item_next(neighbor_copy);
+  // neighbor_copy = list_item_next(neighbor_copy);
 
   static char false_data[10];
 
   n = 0;
 
-  for(neighbor_copy = list_head(neighbors_copy_list.list); neighbor_copy != NULL; ) {
+  for(neighbor_copy; neighbor_copy != NULL; ) {
     flowid_t random_flow;
     neighbor_copy_next = list_item_next(neighbor_copy);
 

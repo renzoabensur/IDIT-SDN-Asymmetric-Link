@@ -4,7 +4,7 @@ set -x
 #set -v
 
 # Simulation set configuration
-MIN_ITER=1
+MIN_ITER=2
 MAX_ITER=5
 COOJA_INSTANCES=1 #max simulations running in parallel
 COOJA_CURRENT_INSTANCE=1

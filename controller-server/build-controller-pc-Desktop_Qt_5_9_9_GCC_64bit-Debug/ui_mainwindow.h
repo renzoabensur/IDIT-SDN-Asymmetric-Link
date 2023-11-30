@@ -96,7 +96,7 @@ public:
         portNumber = new QSpinBox(centralWidget);
         portNumber->setObjectName(QStringLiteral("portNumber"));
         portNumber->setMaximum(65000);
-        portNumber->setValue(60002);
+        portNumber->setValue(60001);
 
         horizontalLayout->addWidget(portNumber);
 

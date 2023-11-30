@@ -171,7 +171,7 @@ static void create_false_flows() {
   list_add(neighbors_copy_list.list, n1);
   list_add(neighbors_copy_list.list, n2);
   list_add(neighbors_copy_list.list, n3);
-  // list_add(neighbors_copy_list.list, n4);
+  list_add(neighbors_copy_list.list, n4);
 
 
   //criar uma lista hardcooded
@@ -189,6 +189,8 @@ static void create_false_flows() {
   neighbor_copy = list_item_next(neighbor_copy);
   neighbor_copy = list_item_next(neighbor_copy);
   neighbor_copy = list_item_next(neighbor_copy);
+  neighbor_copy = list_item_next(neighbor_copy);
+
 
 
   static char false_data[10];

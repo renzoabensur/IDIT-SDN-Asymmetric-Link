@@ -87,11 +87,11 @@ for nnodes in "${nodes_v[@]}"; do
 
 					port=$((60000+$iter));
 
-					cooja_file="$simulation_files_dir"/"ITSDN_n"${nnodes}"_s1_"${topo}"_GRID".csc
+					cooja_file="$simulation_files_dir"/"ITSDN_n36_s1_"${topo}"_GRID".csc
 					#cooja_file="$simulation_files_dir"/${topo}_${nnodes}_2.csc
-					cooja_motes_out_file="$simulation_output_dir"/"ITSDN_n"$nnodes"_top_"$topo"_i"$iter'.txt'
-					cooja_log_file="$simulation_output_dir"/"ITSDN_log_n"$nnodes"_top_"$topo"_i"$iter'.txt'
-					controller_out_file="$simulation_output_dir"/"controller_ITSDN_n"$nnodes"_top_"$topo"_i"$iter'.txt'
+					cooja_motes_out_file="$simulation_output_dir"/"ITSDN_n36_top_"$topo"_i"$iter'.txt'
+					cooja_log_file="$simulation_output_dir"/"ITSDN_log_n36_top_"$topo"_i"$iter'.txt'
+					controller_out_file="$simulation_output_dir"/"controller_ITSDN_n36_top_"$topo"_i"$iter'.txt'
 					simulationLogs=(${simulationLogs[@]} ${cooja_motes_out_file})
 
 					echo Cooja simulation file: $cooja_file

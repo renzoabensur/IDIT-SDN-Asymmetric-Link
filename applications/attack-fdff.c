@@ -168,10 +168,10 @@ static void create_false_flows() {
 
 
   // Add the new entries to the list.
-  list_add(neighbors_copy_list.list, n1);
-  list_add(neighbors_copy_list.list, n2);
-  list_add(neighbors_copy_list.list, n3);
-  list_add(neighbors_copy_list.list, n4);
+  // list_add(neighbors_copy_list.list, n1);
+  // list_add(neighbors_copy_list.list, n2);
+  // list_add(neighbors_copy_list.list, n3);
+  // list_add(neighbors_copy_list.list, n4);
 
 
   //criar uma lista hardcooded
@@ -185,11 +185,11 @@ static void create_false_flows() {
 
   //remove 1 vizinho normal e adixiona 1 vizinho frequncia maior
 
-  neighbor_copy = list_head(neighbors_copy_list.list);
-  neighbor_copy = list_item_next(neighbor_copy);
-  neighbor_copy = list_item_next(neighbor_copy);
-  neighbor_copy = list_item_next(neighbor_copy);
-  neighbor_copy = list_item_next(neighbor_copy);
+  // neighbor_copy = list_head(neighbors_copy_list.list);
+  // neighbor_copy = list_item_next(neighbor_copy);
+  // neighbor_copy = list_item_next(neighbor_copy);
+  // neighbor_copy = list_item_next(neighbor_copy);
+  // neighbor_copy = list_item_next(neighbor_copy);
 
 
 

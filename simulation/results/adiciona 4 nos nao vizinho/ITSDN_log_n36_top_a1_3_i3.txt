@@ -2,7 +2,7 @@
  INFO [main] (Cooja.java:1324) - > Starting Cooja
  INFO [main] (Cooja.java:2865) - External tools default settings: /external_tools_linux_64.config
  INFO [main] (Cooja.java:2895) - External tools user settings: /home/renzo/.cooja.user.properties
- INFO [main] (Simulation.java:420) - Simulation random seed: 8970962754368999526
+ INFO [main] (Simulation.java:420) - Simulation random seed: 2278395998782883191
  INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/controller-node.sky
  INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/sink-node.sky
  INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
@@ -47,7 +47,7 @@
  INFO [main] (ScriptRunner.java:429) - Test script deactivated
  INFO [main] (LogScriptEngine.java:265) - Script timeout in 18000000 ms
  INFO [main] (ScriptRunner.java:386) - Test script activated
- INFO [Thread-2] (Simulation.java:252) - Simulation main loop started, system time: 1700950795000
+ INFO [Thread-2] (Simulation.java:252) - Simulation main loop started, system time: 1701324260613
  INFO [main] (SerialSocketServer.java:389) - Listening on port: 60003
  INFO [main] (ScriptRunner.java:429) - Test script deactivated
  INFO [main] (LogScriptEngine.java:265) - Script timeout in 18000000 ms
@@ -73,242 +73,1030 @@ Exception in thread "AWT-EventQueue-1" java.lang.NullPointerException
 	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
  INFO [Thread-6] (SerialSocketServer.java:478) - Forwarder: socket -> serial port
  INFO [Thread-3] (SerialSocketServer.java:425) - Client connected: /127.0.0.1
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 5,00%, done in 6845,1 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 5,00%, done in 6843,7 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 10,00%, done in 6490,2 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 10,00%, done in 6489,5 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 15,00%, done in 6110,6 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 15,00%, done in 6110,2 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 20,00%, done in 5719,5 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 20,00%, done in 5719,2 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 25,00%, done in 5336,7 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 25,00%, done in 5336,5 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 30,00%, done in 4971,8 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 30,00%, done in 4971,6 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 35,00%, done in 4591,8 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 35,00%, done in 4591,6 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 40,00%, done in 4220,5 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 40,00%, done in 4220,4 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 45,00%, done in 3868,4 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 45,00%, done in 3868,4 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 50,00%, done in 3511,8 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 50,00%, done in 3511,7 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 55,00%, done in 3155,3 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 55,00%, done in 3155,2 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 60,00%, done in 2799,9 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 60,00%, done in 2799,9 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 65,00%, done in 2450,6 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 65,00%, done in 2450,5 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 70,00%, done in 2097,7 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 70,00%, done in 2097,7 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 75,00%, done in 1746,2 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 75,00%, done in 1746,2 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 5,00%, done in 7339,8 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 5,00%, done in 7338,1 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 10,00%, done in 7000,1 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 10,00%, done in 6999,3 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 15,00%, done in 6590,0 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 15,00%, done in 6589,5 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 20,00%, done in 6134,4 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 20,00%, done in 6134,0 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 25,00%, done in 5723,4 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 25,00%, done in 5723,1 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 30,00%, done in 5326,8 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 30,00%, done in 5326,5 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 35,00%, done in 4925,1 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 35,00%, done in 4924,9 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 40,00%, done in 4538,3 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 40,00%, done in 4538,1 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 45,00%, done in 4165,8 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 45,00%, done in 4165,7 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 50,00%, done in 3788,1 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 50,00%, done in 3788,0 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 55,00%, done in 3403,5 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 55,00%, done in 3403,4 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 60,00%, done in 3022,5 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 60,00%, done in 3022,4 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 65,00%, done in 2643,3 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 65,00%, done in 2643,2 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 70,00%, done in 2266,2 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 70,00%, done in 2266,2 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 75,00%, done in 1886,7 sec
+ INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 75,00%, done in 1886,6 sec
 MSP430: *** IOUnit read from non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3c8
-  memb_alloc (strncmp.c) called from PC: $044de (elapsed: 18)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 4868)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 4983)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5018)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6804)
+Stack Trace: number of calls: 5 PC: $0a3e6
+  memb_alloc (strncmp.c) called from PC: $044ec (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 4889)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5004)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5039)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6825)
  WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
 MSP430: *** IOUnit write to non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3d0
-  memb_alloc (strncmp.c) called from PC: $044de (elapsed: 24)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 4874)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 4989)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5024)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6810)
+Stack Trace: number of calls: 5 PC: $0a3ee
+  memb_alloc (strncmp.c) called from PC: $044ec (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 4895)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5010)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5045)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6831)
  WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
 MSP430: *** IOUnit read from non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3c8
-  memb_alloc (strncmp.c) called from PC: $044e8 (elapsed: 18)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 4929)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 5044)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5079)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6865)
+Stack Trace: number of calls: 5 PC: $0a3e6
+  memb_alloc (strncmp.c) called from PC: $044f6 (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 4950)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5065)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5100)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6886)
  WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
 MSP430: *** IOUnit write to non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3d0
-  memb_alloc (strncmp.c) called from PC: $044e8 (elapsed: 24)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 4935)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 5050)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5085)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6871)
+Stack Trace: number of calls: 5 PC: $0a3ee
+  memb_alloc (strncmp.c) called from PC: $044f6 (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 4956)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5071)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5106)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6892)
  WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
 MSP430: *** IOUnit read from non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3c8
-  memb_alloc (strncmp.c) called from PC: $044f2 (elapsed: 18)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 4990)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 5105)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5140)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6926)
+Stack Trace: number of calls: 5 PC: $0a3e6
+  memb_alloc (strncmp.c) called from PC: $04500 (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 5011)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5126)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5161)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6947)
  WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
 MSP430: *** IOUnit write to non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3d0
-  memb_alloc (strncmp.c) called from PC: $044f2 (elapsed: 24)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 4996)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 5111)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5146)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6932)
+Stack Trace: number of calls: 5 PC: $0a3ee
+  memb_alloc (strncmp.c) called from PC: $04500 (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 5017)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5132)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5167)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6953)
  WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
 MSP430: *** IOUnit read from non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3c8
-  memb_alloc (strncmp.c) called from PC: $044fc (elapsed: 18)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 5051)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 5166)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5201)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6987)
+Stack Trace: number of calls: 5 PC: $0a3e6
+  memb_alloc (strncmp.c) called from PC: $0450a (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 5072)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5187)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5222)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 7008)
  WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
 MSP430: *** IOUnit write to non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3d0
-  memb_alloc (strncmp.c) called from PC: $044fc (elapsed: 24)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 5057)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 5172)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5207)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6993)
+Stack Trace: number of calls: 5 PC: $0a3ee
+  memb_alloc (strncmp.c) called from PC: $0450a (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 5078)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5193)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5228)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 7014)
  WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
 MSP430: *** IOUnit read from non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3c8
-  memb_alloc (strncmp.c) called from PC: $044de (elapsed: 18)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 4868)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 4983)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5018)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6804)
+Stack Trace: number of calls: 5 PC: $0a3e6
+  memb_alloc (strncmp.c) called from PC: $044ec (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 4889)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5004)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5039)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6825)
  WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
 MSP430: *** IOUnit write to non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3d0
-  memb_alloc (strncmp.c) called from PC: $044de (elapsed: 24)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 4874)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 4989)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5024)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6810)
+Stack Trace: number of calls: 5 PC: $0a3ee
+  memb_alloc (strncmp.c) called from PC: $044ec (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 4895)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5010)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5045)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6831)
  WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
 MSP430: *** IOUnit read from non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3c8
-  memb_alloc (strncmp.c) called from PC: $044e8 (elapsed: 18)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 4929)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 5044)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5079)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6865)
+Stack Trace: number of calls: 5 PC: $0a3e6
+  memb_alloc (strncmp.c) called from PC: $044f6 (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 4950)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5065)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5100)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6886)
  WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
 MSP430: *** IOUnit write to non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3d0
-  memb_alloc (strncmp.c) called from PC: $044e8 (elapsed: 24)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 4935)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 5050)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5085)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6871)
+Stack Trace: number of calls: 5 PC: $0a3ee
+  memb_alloc (strncmp.c) called from PC: $044f6 (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 4956)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5071)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5106)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6892)
  WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
 MSP430: *** IOUnit read from non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3c8
-  memb_alloc (strncmp.c) called from PC: $044f2 (elapsed: 18)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 4990)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 5105)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5140)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6926)
+Stack Trace: number of calls: 5 PC: $0a3e6
+  memb_alloc (strncmp.c) called from PC: $04500 (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 5011)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5126)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5161)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6947)
  WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
 MSP430: *** IOUnit write to non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3d0
-  memb_alloc (strncmp.c) called from PC: $044f2 (elapsed: 24)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 4996)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 5111)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5146)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6932)
+Stack Trace: number of calls: 5 PC: $0a3ee
+  memb_alloc (strncmp.c) called from PC: $04500 (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 5017)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5132)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5167)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6953)
  WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
 MSP430: *** IOUnit read from non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3c8
-  memb_alloc (strncmp.c) called from PC: $044fc (elapsed: 18)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 5051)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 5166)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5201)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6987)
+Stack Trace: number of calls: 5 PC: $0a3e6
+  memb_alloc (strncmp.c) called from PC: $0450a (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 5072)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5187)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5222)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 7008)
  WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
 MSP430: *** IOUnit write to non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3d0
-  memb_alloc (strncmp.c) called from PC: $044fc (elapsed: 24)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 5057)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 5172)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5207)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6993)
+Stack Trace: number of calls: 5 PC: $0a3ee
+  memb_alloc (strncmp.c) called from PC: $0450a (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 5078)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5193)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5228)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 7014)
  WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
 MSP430: *** IOUnit read from non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3c8
-  memb_alloc (strncmp.c) called from PC: $044de (elapsed: 18)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 4868)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 4983)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5018)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6804)
+Stack Trace: number of calls: 5 PC: $0a3e6
+  memb_alloc (strncmp.c) called from PC: $044ec (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 4889)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5004)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5039)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6825)
  WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
 MSP430: *** IOUnit write to non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3d0
-  memb_alloc (strncmp.c) called from PC: $044de (elapsed: 24)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 4874)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 4989)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5024)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6810)
+Stack Trace: number of calls: 5 PC: $0a3ee
+  memb_alloc (strncmp.c) called from PC: $044ec (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 4895)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5010)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5045)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6831)
  WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
 MSP430: *** IOUnit read from non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3c8
-  memb_alloc (strncmp.c) called from PC: $044e8 (elapsed: 18)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 4929)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 5044)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5079)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6865)
+Stack Trace: number of calls: 5 PC: $0a3e6
+  memb_alloc (strncmp.c) called from PC: $044f6 (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 4950)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5065)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5100)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6886)
  WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
 MSP430: *** IOUnit write to non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3d0
-  memb_alloc (strncmp.c) called from PC: $044e8 (elapsed: 24)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 4935)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 5050)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5085)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6871)
+Stack Trace: number of calls: 5 PC: $0a3ee
+  memb_alloc (strncmp.c) called from PC: $044f6 (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 4956)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5071)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5106)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6892)
  WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
 MSP430: *** IOUnit read from non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3c8
-  memb_alloc (strncmp.c) called from PC: $044f2 (elapsed: 18)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 4990)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 5105)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5140)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6926)
+Stack Trace: number of calls: 5 PC: $0a3e6
+  memb_alloc (strncmp.c) called from PC: $04500 (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 5011)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5126)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5161)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6947)
  WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
 MSP430: *** IOUnit write to non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3d0
-  memb_alloc (strncmp.c) called from PC: $044f2 (elapsed: 24)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 4996)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 5111)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5146)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6932)
+Stack Trace: number of calls: 5 PC: $0a3ee
+  memb_alloc (strncmp.c) called from PC: $04500 (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 5017)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5132)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5167)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6953)
  WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
 MSP430: *** IOUnit read from non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3c8
-  memb_alloc (strncmp.c) called from PC: $044fc (elapsed: 18)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 5051)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 5166)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5201)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6987)
+Stack Trace: number of calls: 5 PC: $0a3e6
+  memb_alloc (strncmp.c) called from PC: $0450a (elapsed: 18)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 5072)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5187)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5222)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 7008)
  WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0040
 MSP430: *** IOUnit write to non-existent IO at $0040
-Stack Trace: number of calls: 5 PC: $0a3d0
-  memb_alloc (strncmp.c) called from PC: $044fc (elapsed: 24)
-  create_false_flows (local in attack-fdff.c) called from PC: $09ad4 (elapsed: 5057)
-  process_thread_ctimer_process (local in ctimer.c) called from PC: $09ecc (elapsed: 5172)
-  call_process (local in process.c) called from PC: $0a06e (elapsed: 5207)
-  process_run (strncmp.c) called from PC: $04222 (elapsed: 6993)
+Stack Trace: number of calls: 5 PC: $0a3ee
+  memb_alloc (strncmp.c) called from PC: $0450a (elapsed: 24)
+  create_false_flows (local in attack-fdff.c) called from PC: $09af2 (elapsed: 5078)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 5193)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 5228)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 7014)
  WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_WRITE]: *** IOUnit write to non-existent IO at $0040
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 80,00%, done in 1395,2 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 80,00%, done in 1395,1 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 85,00%, done in 1046,9 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 85,00%, done in 1046,9 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 90,00%, done in 697,4 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 90,00%, done in 697,4 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 95,00%, done in 348,5 sec
- INFO [Thread-2] (LogScriptEngine.java:389) - Test script at 95,00%, done in 348,5 sec
- INFO [Thread-2] (LogScriptEngine.java:375) - Timeout event @ 18000000000
- INFO [Thread-2] (Simulation.java:311) - Simulation main loop stopped, system time: 1700957762886	Duration: 6967886 ms	Simulated time 18000000 ms	Ratio 2.583279921629028
- INFO [Thread-1] (LogScriptEngine.java:309) - Test script finished
- INFO [AWT-EventQueue-1] (ScriptRunner.java:429) - Test script deactivated
- INFO [Thread-3] (SerialSocketServer.java:429) - Listening thread shut down: Socket closed
- INFO [Thread-6] (SerialSocketServer.java:497) - Socket closed
- INFO [Thread-6] (SerialSocketServer.java:501) - End of Stream
- INFO [Thread-5] (LogScriptEngine.java:309) - Test script finished
- INFO [AWT-EventQueue-1] (ScriptRunner.java:429) - Test script deactivated
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 17 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07bd4 (elapsed: 874)
+  received_announcement (local in collectsdn.c) called from PC: $0a5d6 (elapsed: 1108)
+  announcement_heard (strncmp.c) called from PC: $0b612 (elapsed: 1160)
+  adv_packet_received (local in broadcast-announcement.c) called from PC: $0b79e (elapsed: 1360)
+  recv_from_abc (local in broadcast.c) called from PC: $0b5ae (elapsed: 1401)
+  abc_input (strncmp.c) called from PC: $0ab08 (elapsed: 1414)
+  input (local in rime.c) called from PC: $075fe (elapsed: 1813)
+  input (local in protocol-commutator.c) called from PC: $0ac26 (elapsed: 1965)
+  input_packet (local in csma.c) called from PC: $0afe8 (elapsed: 1970)
+  packet_input (local in nullrdc.c) called from PC: $08e4e (elapsed: 2589)
+  process_thread_cc2420_process (local in cc2420.c) called from PC: $09eea (elapsed: 5885)
+  call_process (local in process.c) called from PC: $09fc6 (elapsed: 5920)
+  do_poll (local in process.c) called from PC: $0a008 (elapsed: 6013)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6027)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 5 PC: $0a724
+  collect_link_estimate_num_estimates (strncmp.c) called from PC: $081cc (elapsed: 8)
+  proactive_probing_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1378)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1493)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1528)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2373)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 648)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 721)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 934)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 969)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2526)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 16 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $07e84 (elapsed: 648)
+  node_packet_received (local in collectsdn.c) called from PC: $0abdc (elapsed: 943)
+  recv_from_broadcast (local in unicast.c) called from PC: $0b79e (elapsed: 1029)
+  recv_from_abc (local in broadcast.c) called from PC: $0b5ae (elapsed: 1070)
+  abc_input (strncmp.c) called from PC: $0ab08 (elapsed: 1083)
+  input (local in rime.c) called from PC: $075fe (elapsed: 3030)
+  input (local in protocol-commutator.c) called from PC: $0ac26 (elapsed: 3124)
+  input_packet (local in csma.c) called from PC: $0afe8 (elapsed: 3129)
+  packet_input (local in nullrdc.c) called from PC: $08e4e (elapsed: 3755)
+  process_thread_cc2420_process (local in cc2420.c) called from PC: $09eea (elapsed: 7051)
+  call_process (local in process.c) called from PC: $09fc6 (elapsed: 7086)
+  do_poll (local in process.c) called from PC: $0a008 (elapsed: 7179)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 7193)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 16 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $08084 (elapsed: 648)
+  node_packet_received (local in collectsdn.c) called from PC: $0abdc (elapsed: 2558)
+  recv_from_broadcast (local in unicast.c) called from PC: $0b79e (elapsed: 2644)
+  recv_from_abc (local in broadcast.c) called from PC: $0b5ae (elapsed: 2685)
+  abc_input (strncmp.c) called from PC: $0ab08 (elapsed: 2698)
+  input (local in rime.c) called from PC: $075fe (elapsed: 4645)
+  input (local in protocol-commutator.c) called from PC: $0ac26 (elapsed: 4739)
+  input_packet (local in csma.c) called from PC: $0afe8 (elapsed: 4744)
+  packet_input (local in nullrdc.c) called from PC: $08e4e (elapsed: 5370)
+  process_thread_cc2420_process (local in cc2420.c) called from PC: $09eea (elapsed: 8666)
+  call_process (local in process.c) called from PC: $09fc6 (elapsed: 8701)
+  do_poll (local in process.c) called from PC: $0a008 (elapsed: 8794)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 8808)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 874)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 947)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1140)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1175)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2629)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 16 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07e84 (elapsed: 874)
+  node_packet_received (local in collectsdn.c) called from PC: $0abdc (elapsed: 1303)
+  recv_from_broadcast (local in unicast.c) called from PC: $0b79e (elapsed: 1389)
+  recv_from_abc (local in broadcast.c) called from PC: $0b5ae (elapsed: 1430)
+  abc_input (strncmp.c) called from PC: $0ab08 (elapsed: 1443)
+  input (local in rime.c) called from PC: $075fe (elapsed: 3390)
+  input (local in protocol-commutator.c) called from PC: $0ac26 (elapsed: 3484)
+  input_packet (local in csma.c) called from PC: $0afe8 (elapsed: 3489)
+  packet_input (local in nullrdc.c) called from PC: $08e4e (elapsed: 4115)
+  process_thread_cc2420_process (local in cc2420.c) called from PC: $09eea (elapsed: 7411)
+  call_process (local in process.c) called from PC: $09fc6 (elapsed: 7446)
+  do_poll (local in process.c) called from PC: $0a008 (elapsed: 7539)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 7553)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 16 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $08084 (elapsed: 874)
+  node_packet_received (local in collectsdn.c) called from PC: $0abdc (elapsed: 3412)
+  recv_from_broadcast (local in unicast.c) called from PC: $0b79e (elapsed: 3498)
+  recv_from_abc (local in broadcast.c) called from PC: $0b5ae (elapsed: 3539)
+  abc_input (strncmp.c) called from PC: $0ab08 (elapsed: 3552)
+  input (local in rime.c) called from PC: $075fe (elapsed: 5499)
+  input (local in protocol-commutator.c) called from PC: $0ac26 (elapsed: 5593)
+  input_packet (local in csma.c) called from PC: $0afe8 (elapsed: 5598)
+  packet_input (local in nullrdc.c) called from PC: $08e4e (elapsed: 6224)
+  process_thread_cc2420_process (local in cc2420.c) called from PC: $09eea (elapsed: 9520)
+  call_process (local in process.c) called from PC: $09fc6 (elapsed: 9555)
+  do_poll (local in process.c) called from PC: $0a008 (elapsed: 9648)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 9662)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 5 PC: $0a724
+  collect_link_estimate_num_estimates (strncmp.c) called from PC: $081cc (elapsed: 8)
+  proactive_probing_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1378)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1493)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1528)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2373)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 807)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 880)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1073)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1108)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2103)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1075)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1148)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1341)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1376)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2830)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1075)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1148)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1321)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1356)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2351)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1075)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1148)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1341)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1376)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2296)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 874)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 947)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1160)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1195)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2190)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1075)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1148)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1321)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1356)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 3063)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1209)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1282)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1495)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1530)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2525)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1075)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1148)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1361)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1396)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2391)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1209)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1282)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1475)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1510)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 3320)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 5 PC: $0a724
+  collect_link_estimate_num_estimates (strncmp.c) called from PC: $081cc (elapsed: 8)
+  proactive_probing_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1334)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1487)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1522)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2292)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1209)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1282)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1515)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1550)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2620)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1075)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1148)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1361)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1396)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2391)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1209)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1282)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1495)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1530)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2525)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1075)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1148)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1361)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1396)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2391)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 648)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 721)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 914)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 949)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 1869)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1075)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1148)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1361)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1396)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2953)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1209)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1282)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1475)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1510)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 3320)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1117)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1190)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1383)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1418)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2338)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1075)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1148)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1341)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1376)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2830)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1075)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1148)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1321)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1356)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2351)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1209)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1282)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1515)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1550)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2620)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1117)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1190)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1343)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1378)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 3160)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1209)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1282)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1495)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1530)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2525)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1117)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1190)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1403)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1438)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2995)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1075)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1148)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1361)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1396)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2953)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1209)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1282)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1495)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1530)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 3087)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1117)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1190)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1363)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1398)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2393)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1075)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1148)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1341)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1376)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2830)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1209)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1282)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1495)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1530)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 3087)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1117)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1190)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1403)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1438)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2995)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1075)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1148)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1341)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1376)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2830)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1209)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1282)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1475)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1510)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2580)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1117)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1190)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1403)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1438)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2995)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1075)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1148)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1341)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1376)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2296)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 19 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 546)
+  update_rtmetric (local in collectsdn.c) called from PC: $07c82 (elapsed: 1029)
+  timedout (local in collectsdn.c) called from PC: $07d86 (elapsed: 1641)
+  node_packet_sent (local in collectsdn.c) called from PC: $0abb2 (elapsed: 1667)
+  sent_by_broadcast (local in unicast.c) called from PC: $0b77c (elapsed: 1680)
+  sent_by_abc (local in broadcast.c) called from PC: $0b5be (elapsed: 1693)
+  abc_sent (strncmp.c) called from PC: $0ab76 (elapsed: 1707)
+  packet_sent (local in rime.c) called from PC: $0afd8 (elapsed: 1747)
+  mac_call_sent_callback (strncmp.c) called from PC: $0afb4 (elapsed: 1762)
+  packet_sent (local in csma.c) called from PC: $0afd8 (elapsed: 2589)
+  mac_call_sent_callback (strncmp.c) called from PC: $0b05a (elapsed: 2604)
+  send_one_packet (local in nullrdc.c) called from PC: $0b082 (elapsed: 13190)
+  send_list (local in nullrdc.c) called from PC: $0ac64 (elapsed: 14301)
+  transmit_packet_list (local in csma.c) called from PC: $09af2 (elapsed: 14332)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 14565)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 14600)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 16082)
+ WARN [Thread-2] (MspMote.java:229) - 41: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1209)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1282)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1515)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1550)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 3210)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 16 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $07e84 (elapsed: 1117)
+  node_packet_received (local in collectsdn.c) called from PC: $0abdc (elapsed: 1546)
+  recv_from_broadcast (local in unicast.c) called from PC: $0b79e (elapsed: 1632)
+  recv_from_abc (local in broadcast.c) called from PC: $0b5ae (elapsed: 1673)
+  abc_input (strncmp.c) called from PC: $0ab08 (elapsed: 1686)
+  input (local in rime.c) called from PC: $075fe (elapsed: 3633)
+  input (local in protocol-commutator.c) called from PC: $0ac26 (elapsed: 3727)
+  input_packet (local in csma.c) called from PC: $0afe8 (elapsed: 3732)
+  packet_input (local in nullrdc.c) called from PC: $08e4e (elapsed: 4358)
+  process_thread_cc2420_process (local in cc2420.c) called from PC: $09eea (elapsed: 7654)
+  call_process (local in process.c) called from PC: $09fc6 (elapsed: 7689)
+  do_poll (local in process.c) called from PC: $0a008 (elapsed: 7782)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 7796)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1117)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1190)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1403)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1438)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2433)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1209)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1282)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1515)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1550)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 3210)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 17 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $07bd4 (elapsed: 1117)
+  received_announcement (local in collectsdn.c) called from PC: $0a5d6 (elapsed: 1418)
+  announcement_heard (strncmp.c) called from PC: $0b612 (elapsed: 1470)
+  adv_packet_received (local in broadcast-announcement.c) called from PC: $0b79e (elapsed: 1670)
+  recv_from_abc (local in broadcast.c) called from PC: $0b5ae (elapsed: 1711)
+  abc_input (strncmp.c) called from PC: $0ab08 (elapsed: 1724)
+  input (local in rime.c) called from PC: $075fe (elapsed: 2123)
+  input (local in protocol-commutator.c) called from PC: $0ac26 (elapsed: 2275)
+  input_packet (local in csma.c) called from PC: $0afe8 (elapsed: 2280)
+  packet_input (local in nullrdc.c) called from PC: $08e4e (elapsed: 2899)
+  process_thread_cc2420_process (local in cc2420.c) called from PC: $09eea (elapsed: 6195)
+  call_process (local in process.c) called from PC: $09fc6 (elapsed: 6230)
+  do_poll (local in process.c) called from PC: $0a008 (elapsed: 6323)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6337)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1117)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1190)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1383)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1418)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2338)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 17 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $07bd4 (elapsed: 1117)
+  received_announcement (local in collectsdn.c) called from PC: $0a5d6 (elapsed: 1418)
+  announcement_heard (strncmp.c) called from PC: $0b612 (elapsed: 1470)
+  adv_packet_received (local in broadcast-announcement.c) called from PC: $0b79e (elapsed: 1670)
+  recv_from_abc (local in broadcast.c) called from PC: $0b5ae (elapsed: 1711)
+  abc_input (strncmp.c) called from PC: $0ab08 (elapsed: 1724)
+  input (local in rime.c) called from PC: $075fe (elapsed: 2123)
+  input (local in protocol-commutator.c) called from PC: $0ac26 (elapsed: 2275)
+  input_packet (local in csma.c) called from PC: $0afe8 (elapsed: 2280)
+  packet_input (local in nullrdc.c) called from PC: $08e4e (elapsed: 2899)
+  process_thread_cc2420_process (local in cc2420.c) called from PC: $09eea (elapsed: 6195)
+  call_process (local in process.c) called from PC: $09fc6 (elapsed: 6230)
+  do_poll (local in process.c) called from PC: $0a008 (elapsed: 6323)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6337)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1209)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1282)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1515)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1550)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2620)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1209)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1282)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1515)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1550)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2620)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 19 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 592)
+  update_rtmetric (local in collectsdn.c) called from PC: $07c82 (elapsed: 1209)
+  timedout (local in collectsdn.c) called from PC: $07d86 (elapsed: 1955)
+  node_packet_sent (local in collectsdn.c) called from PC: $0abb2 (elapsed: 1981)
+  sent_by_broadcast (local in unicast.c) called from PC: $0b77c (elapsed: 1994)
+  sent_by_abc (local in broadcast.c) called from PC: $0b5be (elapsed: 2007)
+  abc_sent (strncmp.c) called from PC: $0ab76 (elapsed: 2021)
+  packet_sent (local in rime.c) called from PC: $0afd8 (elapsed: 2061)
+  mac_call_sent_callback (strncmp.c) called from PC: $0afb4 (elapsed: 2076)
+  packet_sent (local in csma.c) called from PC: $0afd8 (elapsed: 2943)
+  mac_call_sent_callback (strncmp.c) called from PC: $0b05a (elapsed: 2958)
+  send_one_packet (local in nullrdc.c) called from PC: $0b082 (elapsed: 13503)
+  send_list (local in nullrdc.c) called from PC: $0ac64 (elapsed: 14614)
+  transmit_packet_list (local in csma.c) called from PC: $09af2 (elapsed: 14645)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 14918)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 14953)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 16641)
+ WARN [Thread-2] (MspMote.java:229) - 40: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1117)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1190)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1363)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1398)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 3105)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1117)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1190)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1403)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1438)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2433)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1117)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1190)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1403)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1438)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2433)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1117)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1190)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1403)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1438)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2995)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 17 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $07bd4 (elapsed: 1117)
+  received_announcement (local in collectsdn.c) called from PC: $0a5d6 (elapsed: 1418)
+  announcement_heard (strncmp.c) called from PC: $0b612 (elapsed: 1470)
+  adv_packet_received (local in broadcast-announcement.c) called from PC: $0b79e (elapsed: 1670)
+  recv_from_abc (local in broadcast.c) called from PC: $0b5ae (elapsed: 1711)
+  abc_input (strncmp.c) called from PC: $0ab08 (elapsed: 1724)
+  input (local in rime.c) called from PC: $075fe (elapsed: 2123)
+  input (local in protocol-commutator.c) called from PC: $0ac26 (elapsed: 2275)
+  input_packet (local in csma.c) called from PC: $0afe8 (elapsed: 2280)
+  packet_input (local in nullrdc.c) called from PC: $08e4e (elapsed: 2899)
+  process_thread_cc2420_process (local in cc2420.c) called from PC: $09eea (elapsed: 6195)
+  call_process (local in process.c) called from PC: $09fc6 (elapsed: 6230)
+  do_poll (local in process.c) called from PC: $0a008 (elapsed: 6323)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 6337)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1117)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1190)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1403)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1438)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2995)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 8 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $07cd2 (elapsed: 1117)
+  retransmit_callback (local in collectsdn.c) called from PC: $09af2 (elapsed: 1190)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 1403)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 1438)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 2433)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+MSP430: *** IOUnit read from non-existent IO at $0010
+Stack Trace: number of calls: 19 PC: $0a70a
+  collect_link_estimate (strncmp.c) called from PC: $0a94c (elapsed: 8)
+  collect_neighbor_rtmetric_link_estimate (strncmp.c) called from PC: $0a978 (elapsed: 24)
+  collect_neighbor_list_best (strncmp.c) called from PC: $07a94 (elapsed: 500)
+  update_rtmetric (local in collectsdn.c) called from PC: $07c82 (elapsed: 1117)
+  timedout (local in collectsdn.c) called from PC: $07d86 (elapsed: 1863)
+  node_packet_sent (local in collectsdn.c) called from PC: $0abb2 (elapsed: 1889)
+  sent_by_broadcast (local in unicast.c) called from PC: $0b77c (elapsed: 1902)
+  sent_by_abc (local in broadcast.c) called from PC: $0b5be (elapsed: 1915)
+  abc_sent (strncmp.c) called from PC: $0ab76 (elapsed: 1929)
+  packet_sent (local in rime.c) called from PC: $0afd8 (elapsed: 1969)
+  mac_call_sent_callback (strncmp.c) called from PC: $0afb4 (elapsed: 1984)
+  packet_sent (local in csma.c) called from PC: $0afd8 (elapsed: 2831)
+  mac_call_sent_callback (strncmp.c) called from PC: $0b05a (elapsed: 2846)
+  send_one_packet (local in nullrdc.c) called from PC: $0b082 (elapsed: 13370)
+  send_list (local in nullrdc.c) called from PC: $0ac64 (elapsed: 14481)
+  transmit_packet_list (local in csma.c) called from PC: $09af2 (elapsed: 14512)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 14765)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 14800)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 16385)
+ WARN [Thread-2] (MspMote.java:229) - 42: # MSP430[VOID_IO_READ]: *** IOUnit read from non-existent IO at $0010
+P2: WARNING: writing to read-only P2IN
+Stack Trace: number of calls: 4 PC: $0a742
+  periodic (local in collect-neighbor.c) called from PC: $09af2 (elapsed: 201)
+  process_thread_ctimer_process (local in ctimer.c) called from PC: $09eea (elapsed: 316)
+  call_process (local in process.c) called from PC: $0a08c (elapsed: 351)
+  process_run (strncmp.c) called from PC: $04222 (elapsed: 1196)
+ WARN [Thread-2] (MspMote.java:229) - 42: # P2[ILLEGAL_IO_WRITE]: WARNING: writing to read-only P2IN
+FATAL [Thread-2] (Simulation.java:292) - Simulation stopped due to error: null
+org.contikios.cooja.ContikiError
+	at org.contikios.cooja.mspmote.MspMote.execute(MspMote.java:341)
+	at org.contikios.cooja.mspmote.MspMote.execute(MspMote.java:298)
+	at org.contikios.cooja.motes.AbstractWakeupMote$1.execute(AbstractWakeupMote.java:47)
+	at org.contikios.cooja.Simulation.run(Simulation.java:280)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: se.sics.mspsim.core.EmulationException: Writing to read-only P2IN
+	at se.sics.mspsim.core.IOPort.writePort(IOPort.java:280)
+	at se.sics.mspsim.core.IOPort.write(IOPort.java:369)
+	at se.sics.mspsim.core.IOSegment.write(IOSegment.java:51)
+	at se.sics.mspsim.core.MSP430Core$1.write(MSP430Core.java:171)
+	at se.sics.mspsim.core.MSP430Core.emulateOP(MSP430Core.java:2156)
+	at se.sics.mspsim.core.MSP430.stepMicros(MSP430.java:256)
+	at org.contikios.cooja.mspmote.MspMote.execute(MspMote.java:337)
+	... 4 more

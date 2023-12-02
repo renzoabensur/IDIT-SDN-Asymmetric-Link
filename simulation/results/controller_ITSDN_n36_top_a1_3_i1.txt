@@ -1,0 +1,27 @@
+QMetaObject::connectSlotsByName: No matching signal for on_getNodeButton_clicked()
+This plugin does not support propagateSizeHints()
+next_hop == own address, action is forced to receive
+sdn_solve_unknown_dest [ 01 00 ]
+sdn_solve_unknown_flow 0
+[ 01 00 ] [ 01 00 ] 
+next_hop == own address, action is forced to receive
+sdn_solve_unknown_dest [ 01 00 ]
+Flow ID List Table (new register) (Head): FlowID 0 target [ 01 00 ]
+########## DEFINES ##########
+WEIGHT_ETX 1,00
+WEIGHT_ENERGY 0,00
+SDN_CONTROLLER_PC (defined)
+DEBUG_SDN (defined)
+SDNADDR_SIZE 2
+DIGRAPH_VERTICE_ID_SIZE 2
+SDN_ROUTE_SENSIBILITY 0,50
+SDN_MAX_PACKET_SIZE 115
+SDN_SEND_QUEUE_SIZE 100
+SDN_RECV_QUEUE_SIZE 100
+SDN_TX_RELIABILITY 1
+SDN_RETRANSMIT_TIME_S 60
+SDN_NEIGHBORINFO_NEIGHBORS_TO_SRC (defined)
+SDN_NEIGHBORINFO_SRC_TO_NEIGHBORS (defined)
+SDN_SOURCE_ROUTED (defined)
+########## ##########
+Controller initialized! Address size 2.

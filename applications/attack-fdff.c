@@ -185,7 +185,8 @@ static void create_false_flows() {
 
   //remove 1 vizinho normal e adixiona 1 vizinho frequncia maior
 
-  // neighbor_copy = list_head(neighbors_copy_list.list);
+  neighbor_copy = list_head(neighbors_copy_list.list);
+  //mudar para baixo
   // neighbor_copy = list_item_next(neighbor_copy);
   // neighbor_copy = list_item_next(neighbor_copy);
   // neighbor_copy = list_item_next(neighbor_copy);

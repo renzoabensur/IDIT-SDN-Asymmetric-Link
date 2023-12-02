@@ -10,7 +10,7 @@ COOJA_INSTANCES=1 #max simulations running in parallel
 COOJA_CURRENT_INSTANCE=1
 
 # nodes_v=(36 100)
-nodes_v=(100)
+nodes_v=(225)
 # topologies=(a1_1 a2_1 a3_1 a1_3 a2_3 a3_3)
 topologies=(a1_3)
 # SIM_TIME_MS=1800000 # 30 minutes

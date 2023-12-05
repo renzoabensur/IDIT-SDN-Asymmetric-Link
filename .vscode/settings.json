@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "clock.h": "c",
+        "sdn-metrics-cal.h": "c",
+        "cmath": "c"
+    }
+}

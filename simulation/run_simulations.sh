@@ -10,7 +10,7 @@ COOJA_INSTANCES=1 #max simulations running in parallel
 COOJA_CURRENT_INSTANCE=1
 
 # nodes_v=(36 100)
-nodes_v=(225)
+nodes_v=(36)
 # topologies=(a1_1 a2_1 a3_1 a1_3 a2_3 a3_3)
 topologies=(a1_3)
 # SIM_TIME_MS=1800000 # 30 minutes
@@ -38,7 +38,7 @@ run_cooja() {
 # $4 => number employed to choose a different cooja directory for
 #				each parallel simulation
 	# (
-		cd "/home/renzo/contiki-3.0/tools/cooja/dist"
+		cd "${contiki_dir}${4}${cooja_dir}/dist"
 		java -mx12120m -jar cooja.jar -nogui="$1" > $2 2>&1 &
 
 		# append the pid of the last process (i.e. $!) to the list
@@ -87,11 +87,11 @@ for nnodes in "${nodes_v[@]}"; do
 
 					port=$((60000+$iter));
 
-					cooja_file="$simulation_files_dir"/"ITSDN_n36_s1_"${topo}"_GRID".csc
+					cooja_file="$simulation_files_dir"/"ITSDN_n"${nnodes}"_s1_"${topo}"_GRID".csc
 					#cooja_file="$simulation_files_dir"/${topo}_${nnodes}_2.csc
-					cooja_motes_out_file="$simulation_output_dir"/"ITSDN_n36_top_"$topo"_i"$iter'.txt'
-					cooja_log_file="$simulation_output_dir"/"ITSDN_log_n36_top_"$topo"_i"$iter'.txt'
-					controller_out_file="$simulation_output_dir"/"controller_ITSDN_n36_top_"$topo"_i"$iter'.txt'
+					cooja_motes_out_file="$simulation_output_dir"/"ITSDN_n"$nnodes"_top_"$topo"_i"$iter'.txt'
+					cooja_log_file="$simulation_output_dir"/"ITSDN_log_n"$nnodes"_top_"$topo"_i"$iter'.txt'
+					controller_out_file="$simulation_output_dir"/"controller_ITSDN_n"$nnodes"_top_"$topo"_i"$iter'.txt'
 					simulationLogs=(${simulationLogs[@]} ${cooja_motes_out_file})
 
 					echo Cooja simulation file: $cooja_file
@@ -139,7 +139,7 @@ for nnodes in "${nodes_v[@]}"; do
 						make TARGET=sky -f Makefile_enabled_node management-sink
 						
 						make TARGET=sky clean -f Makefile_enabled_node
-						make TARGET=sky -f Makefile_enabled_node attack-fdff
+						make TARGET=sky -f Makefile_enabled_node attack-one
 
 						# make clean -f Makefile_enabled_node
 						# make -f Makefile_enabled_node attack-two

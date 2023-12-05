@@ -1,0 +1,122 @@
+ WARN [main] (Cooja.java:3181) - JAVA_HOME environment variable not set, Cooja motes may not compile
+ INFO [main] (Cooja.java:1324) - > Starting Cooja
+ INFO [main] (Cooja.java:2865) - External tools default settings: /external_tools_linux_64.config
+ INFO [main] (Cooja.java:2895) - External tools user settings: /home/renzo/.cooja.user.properties
+ INFO [main] (Simulation.java:420) - Simulation random seed: 5164248637587085742
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/controller-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/sink-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/enabled-node.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/management-sink.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/attack-fdff.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/attack-fdff.sky
+ INFO [main] (MspMote.java:235) - Loading firmware from: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/../applications/attack-fdff.sky
+ INFO [main] (Cooja.java:1790) - Visualized plugin was not started: class org.contikios.cooja.plugins.SimControl
+ INFO [main] (Cooja.java:1790) - Visualized plugin was not started: class org.contikios.cooja.plugins.Visualizer
+ INFO [main] (Cooja.java:1790) - Visualized plugin was not started: class org.contikios.cooja.plugins.LogListener
+ INFO [main] (Cooja.java:1790) - Visualized plugin was not started: class org.contikios.cooja.plugins.TimeLine
+ INFO [main] (Cooja.java:1790) - Visualized plugin was not started: class org.contikios.cooja.plugins.Notes
+ INFO [main] (ScriptRunner.java:429) - Test script deactivated
+Warning: Nashorn engine is planned to be removed from a future JDK release
+ INFO [main] (LogScriptEngine.java:265) - Script timeout in 18000000 ms
+ INFO [main] (ScriptRunner.java:386) - Test script activated
+ INFO [Thread-1] (Simulation.java:252) - Simulation main loop started, system time: 1695754676806
+ INFO [main] (SerialSocketServer.java:389) - Listening on port: 60002
+ INFO [main] (ScriptRunner.java:429) - Test script deactivated
+Warning: Nashorn engine is planned to be removed from a future JDK release
+ INFO [main] (LogScriptEngine.java:265) - Script timeout in 18000000 ms
+ INFO [main] (ScriptRunner.java:386) - Test script activated
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at org.contikios.cooja.serialsocket.SerialSocketServer$6.actionPerformed(SerialSocketServer.java:652)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Timer.java:317)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Timer.java:249)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:740)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+ INFO [Thread-4] (SerialSocketServer.java:478) - Forwarder: socket -> serial port
+ INFO [Thread-2] (SerialSocketServer.java:425) - Client connected: /127.0.0.1
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 5.00%, done in 7587.2 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 5.00%, done in 7585.6 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 10.00%, done in 7255.4 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 10.00%, done in 7254.6 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 15.00%, done in 6809.8 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 15.00%, done in 6809.3 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 20.00%, done in 6345.7 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 20.00%, done in 6345.4 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 25.00%, done in 5927.7 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 25.00%, done in 5927.5 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 30.00%, done in 5504.1 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 30.00%, done in 5503.9 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 35.00%, done in 5094.0 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 35.00%, done in 5093.9 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 40.00%, done in 4695.4 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 40.00%, done in 4695.2 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 45.00%, done in 4302.2 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 45.00%, done in 4302.1 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 50.00%, done in 3904.2 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 50.00%, done in 3904.1 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 55.00%, done in 3507.6 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 55.00%, done in 3507.5 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 60.00%, done in 3121.0 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 60.00%, done in 3120.9 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 65.00%, done in 2734.3 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 65.00%, done in 2734.2 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 70.00%, done in 2346.6 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 70.00%, done in 2346.6 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 75.00%, done in 1956.8 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 75.00%, done in 1956.8 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 80.00%, done in 1567.3 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 80.00%, done in 1567.2 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 85.00%, done in 1176.4 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 85.00%, done in 1176.3 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 90.00%, done in 784.5 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 90.00%, done in 784.5 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 95.00%, done in 392.3 sec
+ INFO [Thread-1] (LogScriptEngine.java:389) - Test script at 95.00%, done in 392.3 sec
+ INFO [Thread-1] (LogScriptEngine.java:375) - Timeout event @ 18000000000
+ INFO [Thread-1] (Simulation.java:311) - Simulation main loop stopped, system time: 1695762519711	Duration: 7842905 ms	Simulated time 18000000 ms	Ratio 2.2950679627000454
+ INFO [Thread-0] (LogScriptEngine.java:309) - Test script finished
+ INFO [AWT-EventQueue-0] (ScriptRunner.java:429) - Test script deactivated
+ INFO [Thread-4] (SerialSocketServer.java:497) - Socket closed
+ INFO [Thread-2] (SerialSocketServer.java:429) - Listening thread shut down: Socket closed
+ INFO [Thread-4] (SerialSocketServer.java:501) - End of Stream
+ INFO [Thread-3] (LogScriptEngine.java:309) - Test script finished
+ INFO [AWT-EventQueue-0] (ScriptRunner.java:429) - Test script deactivated

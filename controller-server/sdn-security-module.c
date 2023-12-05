@@ -35,6 +35,8 @@
 #include "sdn-debug.h"
 #include "sdn-addr.h"
 #include "sdn-metrics-cal.h"
+#include <time.h>
+
 
 #define D_THRESHOLD 0.5
 #define CTRL_PCKTS_OVHD 100
@@ -461,10 +463,40 @@ uint16_t security_cp_detector(int metric_id, uint16_t i_s, uint16_t M, float gam
   printf("DT: %.2lf ca: %.2lf\n", DT, ca);
   if(DT >= ca){
     printf("CP detected in %u\n", M_WIN + i_s);
+    time_t current_time;
+    struct tm *time_info;
+    char time_str[100];
+
+    // Get the current time
+    time(&current_time);
+
+    // Convert the current time to a local time structure
+    time_info = localtime(&current_time);
+
+    // Format the time as a string
+    strftime(time_str, sizeof(time_str), "%Y-%m-%d %H:%M:%S", time_info);
+
+    // Print the formatted time
+    printf("CP detected in time: %s\n", time_str);
     return 1;
   }
   else{
     printf("CP not detected yet in %u\n", M_WIN + i_s);
+    time_t current_time;
+    struct tm *time_info;
+    char time_str[100];
+
+    // Get the current time
+    time(&current_time);
+
+    // Convert the current time to a local time structure
+    time_info = localtime(&current_time);
+
+    // Format the time as a string
+    strftime(time_str, sizeof(time_str), "%Y-%m-%d %H:%M:%S", time_info);
+
+    // Print the formatted time
+    printf("CP not detected in time: %s\n", time_str);
     return 0;
   }
 }

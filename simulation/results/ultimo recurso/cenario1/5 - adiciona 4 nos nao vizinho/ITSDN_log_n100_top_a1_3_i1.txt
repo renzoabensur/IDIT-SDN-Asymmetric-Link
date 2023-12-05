@@ -1,0 +1,15 @@
+ WARN [main] (Cooja.java:3181) - JAVA_HOME environment variable not set, Cooja motes may not compile
+ INFO [main] (Cooja.java:1324) - > Starting Cooja
+ INFO [main] (Cooja.java:2865) - External tools default settings: /external_tools_linux_64.config
+ INFO [main] (Cooja.java:2895) - External tools user settings: /home/renzo/.cooja.user.properties
+FATAL [main] (Cooja.java:1346) - Exception when loading simulation: 
+org.contikios.cooja.Cooja$SimulationCreationException: Load simulation error
+	at org.contikios.cooja.Cooja.loadSimulationConfig(Cooja.java:3374)
+	at org.contikios.cooja.Cooja.quickStartSimulationConfig(Cooja.java:1339)
+	at org.contikios.cooja.Cooja.main(Cooja.java:3248)
+Caused by: java.io.FileNotFoundException: /home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/ITSDN_n100_s1_a1_3_GRID.csc (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.contikios.cooja.Cooja.loadSimulationConfig(Cooja.java:3362)
+	... 2 more

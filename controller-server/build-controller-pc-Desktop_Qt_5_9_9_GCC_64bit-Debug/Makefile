@@ -15,7 +15,7 @@ CXX           = g++
 DEFINES       = -DQT_DEPRECATED_WARNINGS -DSDN_CONTROLLER_PC -DDEBUG_SDN -DSDNADDR_SIZE=2 -DDIGRAPH_VERTICE_ID_SIZE=SDNADDR_SIZE -DSDN_MAX_PACKET_SIZE=115 -DSDN_SEND_QUEUE_SIZE=100 -DSDN_RECV_QUEUE_SIZE=100 -DSDN_CONF_METRIC=dummy_metric -DSDN_ROUTE_SENSIBILITY=0.5 -DSDN_CONF_TX_RELIABILITY=1 -DSDN_NEIGHBORINFO_NEIGHBORS_TO_SRC -DSDN_NEIGHBORINFO_SRC_TO_NEIGHBORS -DSDN_SOURCE_ROUTED -DWEIGHT_ETX=1.0 -DWEIGHT_ENERGY=0.0 -DMANAGEMENT -DCP_DETECT -DDIST_DETECT -DTRANS_TS -DCENTR_DETECT -DCTRL_OV_DETECT -DDATA_DR_DETECT -DMSIXTYSEC -DQT_QML_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SERIALPORT_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -g -Wall -W -D_REENTRANT -fPIC $(DEFINES)
 CXXFLAGS      = -pipe -g -Wall -W -D_REENTRANT -fPIC $(DEFINES)
-INCPATH       = -I../controller-pc -I. -I/home/renzo/contiki-3.0/core -I../../sdn-common -I../../controller-server -I../digraph -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtGui -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtNetwork -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtSerialPort -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtCore -I. -isystem /usr/include/libdrm -I. -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/linux-g++
+INCPATH       = -I../controller-pc -I. -I../../../../contiki-3.0/core -I../../sdn-common -I../../controller-server -I../digraph -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtGui -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtNetwork -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtSerialPort -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtCore -I. -isystem /usr/include/libdrm -I. -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/linux-g++
 QMAKE         = /home/renzo/Qt5.9.9/5.9.9/gcc_64/bin/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -64,7 +64,7 @@ SOURCES       = ../controller-pc/main.cpp \
 		../../sdn-common/sdn-process-packets.c \
 		../../sdn-common/sdn-unknown-route.c \
 		../../sdn-common/ids-data.c \
-		/home/renzo/contiki-3.0/core/lib/list.c \
+		../../../../contiki-3.0/core/lib/list.c \
 		../digraph/digraph.c \
 		../digraph/dummy-metric.c \
 		../digraph/mamdani-fuzzy-model-metric.c \
@@ -271,6 +271,7 @@ DIST          = ../controller-pc/controller-pc.pro.contiki \
 		/home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/features/qt_config.prf \
 		/home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/features/spec_post.prf \
+		../controller-pc/.qmake.stash \
 		/home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/features/toolchain.prf \
 		/home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/features/default_pre.prf \
@@ -307,7 +308,7 @@ DIST          = ../controller-pc/controller-pc.pro.contiki \
 		../../sdn-common/sdn-unknown-route.h \
 		../../sdn-common/sdn-serial-packet.h \
 		../../sdn-common/ids-data.h \
-		/home/renzo/contiki-3.0/core/lib/list.h \
+		../../../../contiki-3.0/core/lib/list.h \
 		../digraph/digraph.h \
 		../digraph/dummy-metric.h \
 		../digraph/mamdani-fuzzy-model-metric.h \
@@ -334,7 +335,7 @@ DIST          = ../controller-pc/controller-pc.pro.contiki \
 		../../sdn-common/sdn-process-packets.c \
 		../../sdn-common/sdn-unknown-route.c \
 		../../sdn-common/ids-data.c \
-		/home/renzo/contiki-3.0/core/lib/list.c \
+		../../../../contiki-3.0/core/lib/list.c \
 		../digraph/digraph.c \
 		../digraph/dummy-metric.c \
 		../digraph/mamdani-fuzzy-model-metric.c \
@@ -519,6 +520,7 @@ Makefile: ../controller-pc/controller-pc.pro /home/renzo/Qt5.9.9/5.9.9/gcc_64/mk
 		/home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/features/qt_config.prf \
 		/home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/features/toolchain.prf \
 		/home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/features/default_pre.prf \
@@ -707,6 +709,7 @@ Makefile: ../controller-pc/controller-pc.pro /home/renzo/Qt5.9.9/5.9.9/gcc_64/mk
 /home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/features/qt_config.prf:
 /home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/linux-g++/qmake.conf:
 /home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/features/exclusive_builds.prf:
 /home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/features/toolchain.prf:
 /home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/features/default_pre.prf:
@@ -748,8 +751,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../controller-pc/mainwindow.h ../controller-pc/serializer.h ../controller-pc/serialconnector.h ../../sdn-common/control-flow-table.h ../../sdn-common/data-flow-table.h ../../sdn-common/sdn-addr.h ../../sdn-common/sdn-constants.h ../../sdn-common/sdn-debug.h ../../sdn-common/sdn-packetbuf.h ../../sdn-common/sdn-protocol.h ../../sdn-common/sdn-queue.h ../../sdn-common/sdn-send-packet.h ../../sdn-common/sdn-process-packets.h ../../sdn-common/sdn-unknown-route.h ../../sdn-common/sdn-serial-packet.h ../../sdn-common/ids-data.h /home/renzo/contiki-3.0/core/lib/list.h ../digraph/digraph.h ../digraph/dummy-metric.h ../digraph/mamdani-fuzzy-model-metric.h ../digraph/dijkstra.h ../digraph/sdn-metric.h ../controller-core.h ../sdn-flow-table-cache.h ../sdn-serial-send.h ../sdn-process-packets-controller.h ../sdn-reliability.h ../sdn-security-module.h ../sdn-metrics-cal.h ../controller-pc/mainwindow_wrapper.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../controller-pc/main.cpp ../controller-pc/mainwindow.cpp ../controller-pc/serializer.cpp ../controller-pc/serialconnector.cpp ../../sdn-common/control-flow-table.c ../../sdn-common/data-flow-table.c ../../sdn-common/sdn-addr.c ../../sdn-common/sdn-debug.c ../../sdn-common/sdn-packetbuf.c ../../sdn-common/sdn-queue.c ../../sdn-common/sdn-send-packet.c ../../sdn-common/sdn-process-packets.c ../../sdn-common/sdn-unknown-route.c ../../sdn-common/ids-data.c /home/renzo/contiki-3.0/core/lib/list.c ../digraph/digraph.c ../digraph/dummy-metric.c ../digraph/mamdani-fuzzy-model-metric.c ../digraph/dijkstra.c ../controller-core.c ../sdn-flow-table-cache.c ../sdn-serial-send.c ../sdn-process-packets-controller.c ../sdn-reliability.c ../sdn-security-module.c ../sdn-metrics-cal.c ../controller-pc/mainwindow_wrapper.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../controller-pc/mainwindow.h ../controller-pc/serializer.h ../controller-pc/serialconnector.h ../../sdn-common/control-flow-table.h ../../sdn-common/data-flow-table.h ../../sdn-common/sdn-addr.h ../../sdn-common/sdn-constants.h ../../sdn-common/sdn-debug.h ../../sdn-common/sdn-packetbuf.h ../../sdn-common/sdn-protocol.h ../../sdn-common/sdn-queue.h ../../sdn-common/sdn-send-packet.h ../../sdn-common/sdn-process-packets.h ../../sdn-common/sdn-unknown-route.h ../../sdn-common/sdn-serial-packet.h ../../sdn-common/ids-data.h ../../../../contiki-3.0/core/lib/list.h ../digraph/digraph.h ../digraph/dummy-metric.h ../digraph/mamdani-fuzzy-model-metric.h ../digraph/dijkstra.h ../digraph/sdn-metric.h ../controller-core.h ../sdn-flow-table-cache.h ../sdn-serial-send.h ../sdn-process-packets-controller.h ../sdn-reliability.h ../sdn-security-module.h ../sdn-metrics-cal.h ../controller-pc/mainwindow_wrapper.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../controller-pc/main.cpp ../controller-pc/mainwindow.cpp ../controller-pc/serializer.cpp ../controller-pc/serialconnector.cpp ../../sdn-common/control-flow-table.c ../../sdn-common/data-flow-table.c ../../sdn-common/sdn-addr.c ../../sdn-common/sdn-debug.c ../../sdn-common/sdn-packetbuf.c ../../sdn-common/sdn-queue.c ../../sdn-common/sdn-send-packet.c ../../sdn-common/sdn-process-packets.c ../../sdn-common/sdn-unknown-route.c ../../sdn-common/ids-data.c ../../../../contiki-3.0/core/lib/list.c ../digraph/digraph.c ../digraph/dummy-metric.c ../digraph/mamdani-fuzzy-model-metric.c ../digraph/dijkstra.c ../controller-core.c ../sdn-flow-table-cache.c ../sdn-serial-send.c ../sdn-process-packets-controller.c ../sdn-reliability.c ../sdn-security-module.c ../sdn-metrics-cal.c ../controller-pc/mainwindow_wrapper.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../controller-pc/mainwindow.ui $(DISTDIR)/
 
 
@@ -906,7 +909,7 @@ moc_mainwindow.cpp: /home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/QMainWind
 		../controller-pc/mainwindow.h \
 		moc_predefs.h \
 		/home/renzo/Qt5.9.9/5.9.9/gcc_64/bin/moc
-	/home/renzo/Qt5.9.9/5.9.9/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/linux-g++ -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/controller-server/controller-pc -I/home/renzo/contiki-3.0/core -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/sdn-common -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/controller-server -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/controller-server/digraph -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtGui -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtNetwork -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtSerialPort -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../controller-pc/mainwindow.h -o moc_mainwindow.cpp
+	/home/renzo/Qt5.9.9/5.9.9/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/linux-g++ -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/controller-server/controller-pc -I/home/renzo/Documents/contiki-3.0/core -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/sdn-common -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/controller-server -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/controller-server/digraph -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtGui -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtNetwork -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtSerialPort -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../controller-pc/mainwindow.h -o moc_mainwindow.cpp
 
 moc_serializer.cpp: /home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtCore/QObject \
 		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtCore/qobject.h \
@@ -961,7 +964,7 @@ moc_serializer.cpp: /home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtCore/QObject \
 		../controller-pc/serializer.h \
 		moc_predefs.h \
 		/home/renzo/Qt5.9.9/5.9.9/gcc_64/bin/moc
-	/home/renzo/Qt5.9.9/5.9.9/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/linux-g++ -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/controller-server/controller-pc -I/home/renzo/contiki-3.0/core -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/sdn-common -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/controller-server -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/controller-server/digraph -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtGui -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtNetwork -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtSerialPort -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../controller-pc/serializer.h -o moc_serializer.cpp
+	/home/renzo/Qt5.9.9/5.9.9/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/linux-g++ -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/controller-server/controller-pc -I/home/renzo/Documents/contiki-3.0/core -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/sdn-common -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/controller-server -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/controller-server/digraph -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtGui -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtNetwork -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtSerialPort -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../controller-pc/serializer.h -o moc_serializer.cpp
 
 moc_serialconnector.cpp: /home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtCore/QObject \
 		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtCore/qobject.h \
@@ -1019,7 +1022,7 @@ moc_serialconnector.cpp: /home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtCore/QObject
 		../controller-pc/serialconnector.h \
 		moc_predefs.h \
 		/home/renzo/Qt5.9.9/5.9.9/gcc_64/bin/moc
-	/home/renzo/Qt5.9.9/5.9.9/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/linux-g++ -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/controller-server/controller-pc -I/home/renzo/contiki-3.0/core -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/sdn-common -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/controller-server -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/controller-server/digraph -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtGui -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtNetwork -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtSerialPort -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../controller-pc/serialconnector.h -o moc_serialconnector.cpp
+	/home/renzo/Qt5.9.9/5.9.9/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/mkspecs/linux-g++ -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/controller-server/controller-pc -I/home/renzo/Documents/contiki-3.0/core -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/sdn-common -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/controller-server -I/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/controller-server/digraph -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtGui -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtNetwork -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtSerialPort -I/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../controller-pc/serialconnector.h -o moc_serialconnector.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
@@ -1289,29 +1292,95 @@ mainwindow.o: ../controller-pc/mainwindow.cpp ../controller-pc/mainwindow.h \
 		../controller-pc/serializer.h \
 		../controller-core.h \
 		ui_mainwindow.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtCore/QVariant \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/QAction \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qaction.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qactiongroup.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/QApplication \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qapplication.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtCore/qcoreapplication.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtCore/qeventloop.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtGui/qguiapplication.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtGui/qinputmethod.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/QButtonGroup \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qbuttongroup.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/QGroupBox \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qgroupbox.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qframe.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/QHBoxLayout \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qboxlayout.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qlayout.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qgridlayout.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/QHeaderView \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qheaderview.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtCore/qabstractitemmodel.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtCore/qitemselectionmodel.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qstyleoption.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtGui/qvalidator.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtCore/qregularexpression.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qslider.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qabstractslider.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qstyle.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qtabbar.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qrubberband.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/QLabel \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qlabel.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/QLineEdit \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qlineedit.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtGui/qtextcursor.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtGui/qtextformat.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtGui/qpen.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtGui/qtextoption.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/QMenuBar \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qmenubar.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qmenu.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/QPushButton \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qpushbutton.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/QRadioButton \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qradiobutton.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/QSpacerItem \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/QSpinBox \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qspinbox.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/QStatusBar \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qstatusbar.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/QTextBrowser \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qtextbrowser.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qtextedit.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtGui/qtextdocument.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/QToolBar \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/qtoolbar.h \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/QVBoxLayout \
+		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtWidgets/QWidget \
 		../../sdn-common/sdn-send-packet.h \
 		../../sdn-common/sdn-packetbuf.h \
-		/home/renzo/contiki-3.0/core/lib/memb.h \
-		/home/renzo/contiki-3.0/core/sys/cc.h \
+		../../../../contiki-3.0/core/lib/memb.h \
+		../../../../contiki-3.0/core/sys/cc.h \
 		../sdn-serial-send.h \
 		../../sdn-common/sdn-constants.h \
 		../../sdn-common/sdn-queue.h \
-		/home/renzo/contiki-3.0/core/contiki.h \
-		/home/renzo/contiki-3.0/core/contiki-version.h \
-		/home/renzo/contiki-3.0/core/contiki-default-conf.h \
-		/home/renzo/contiki-3.0/core/sys/process.h \
-		/home/renzo/contiki-3.0/core/sys/pt.h \
-		/home/renzo/contiki-3.0/core/sys/lc.h \
-		/home/renzo/contiki-3.0/core/sys/lc-switch.h \
-		/home/renzo/contiki-3.0/core/sys/autostart.h \
-		/home/renzo/contiki-3.0/core/sys/timer.h \
-		/home/renzo/contiki-3.0/core/sys/clock.h \
-		/home/renzo/contiki-3.0/core/sys/ctimer.h \
-		/home/renzo/contiki-3.0/core/sys/etimer.h \
-		/home/renzo/contiki-3.0/core/sys/rtimer.h \
-		/home/renzo/contiki-3.0/core/sys/procinit.h \
-		/home/renzo/contiki-3.0/core/sys/loader.h \
-		/home/renzo/contiki-3.0/core/sys/energest.h \
+		../../../../contiki-3.0/core/contiki.h \
+		../../../../contiki-3.0/core/contiki-version.h \
+		../../../../contiki-3.0/core/contiki-default-conf.h \
+		../../../../contiki-3.0/core/sys/process.h \
+		../../../../contiki-3.0/core/sys/pt.h \
+		../../../../contiki-3.0/core/sys/lc.h \
+		../../../../contiki-3.0/core/sys/lc-switch.h \
+		../../../../contiki-3.0/core/sys/autostart.h \
+		../../../../contiki-3.0/core/sys/timer.h \
+		../../../../contiki-3.0/core/sys/clock.h \
+		../../../../contiki-3.0/core/sys/ctimer.h \
+		../../../../contiki-3.0/core/sys/etimer.h \
+		../../../../contiki-3.0/core/sys/rtimer.h \
+		../../../../contiki-3.0/core/sys/procinit.h \
+		../../../../contiki-3.0/core/sys/loader.h \
+		../../../../contiki-3.0/core/sys/energest.h \
 		../../sdn-common/sdn-common-send.h \
 		../sdn-reliability.h \
 		../sdn-process-packets-controller.h \
@@ -1449,23 +1518,23 @@ serialconnector.o: ../controller-pc/serialconnector.cpp ../controller-pc/serialc
 		../sdn-serial-send.h \
 		../../sdn-common/sdn-constants.h \
 		../../sdn-common/sdn-queue.h \
-		/home/renzo/contiki-3.0/core/contiki.h \
-		/home/renzo/contiki-3.0/core/contiki-version.h \
-		/home/renzo/contiki-3.0/core/contiki-default-conf.h \
-		/home/renzo/contiki-3.0/core/sys/process.h \
-		/home/renzo/contiki-3.0/core/sys/pt.h \
-		/home/renzo/contiki-3.0/core/sys/lc.h \
-		/home/renzo/contiki-3.0/core/sys/lc-switch.h \
-		/home/renzo/contiki-3.0/core/sys/cc.h \
-		/home/renzo/contiki-3.0/core/sys/autostart.h \
-		/home/renzo/contiki-3.0/core/sys/timer.h \
-		/home/renzo/contiki-3.0/core/sys/clock.h \
-		/home/renzo/contiki-3.0/core/sys/ctimer.h \
-		/home/renzo/contiki-3.0/core/sys/etimer.h \
-		/home/renzo/contiki-3.0/core/sys/rtimer.h \
-		/home/renzo/contiki-3.0/core/sys/procinit.h \
-		/home/renzo/contiki-3.0/core/sys/loader.h \
-		/home/renzo/contiki-3.0/core/sys/energest.h \
+		../../../../contiki-3.0/core/contiki.h \
+		../../../../contiki-3.0/core/contiki-version.h \
+		../../../../contiki-3.0/core/contiki-default-conf.h \
+		../../../../contiki-3.0/core/sys/process.h \
+		../../../../contiki-3.0/core/sys/pt.h \
+		../../../../contiki-3.0/core/sys/lc.h \
+		../../../../contiki-3.0/core/sys/lc-switch.h \
+		../../../../contiki-3.0/core/sys/cc.h \
+		../../../../contiki-3.0/core/sys/autostart.h \
+		../../../../contiki-3.0/core/sys/timer.h \
+		../../../../contiki-3.0/core/sys/clock.h \
+		../../../../contiki-3.0/core/sys/ctimer.h \
+		../../../../contiki-3.0/core/sys/etimer.h \
+		../../../../contiki-3.0/core/sys/rtimer.h \
+		../../../../contiki-3.0/core/sys/procinit.h \
+		../../../../contiki-3.0/core/sys/loader.h \
+		../../../../contiki-3.0/core/sys/energest.h \
 		../../sdn-common/sdn-common-send.h \
 		../sdn-reliability.h \
 		../sdn-security-module.h \
@@ -1494,57 +1563,57 @@ serialconnector.o: ../controller-pc/serialconnector.cpp ../controller-pc/serialc
 		/home/renzo/Qt5.9.9/5.9.9/gcc_64/include/QtSerialPort/qserialportglobal.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o serialconnector.o ../controller-pc/serialconnector.cpp
 
-control-flow-table.o: ../../sdn-common/control-flow-table.c /home/renzo/contiki-3.0/core/contiki.h \
-		/home/renzo/contiki-3.0/core/contiki-version.h \
-		/home/renzo/contiki-3.0/core/contiki-default-conf.h \
-		/home/renzo/contiki-3.0/core/sys/process.h \
-		/home/renzo/contiki-3.0/core/sys/pt.h \
-		/home/renzo/contiki-3.0/core/sys/lc.h \
-		/home/renzo/contiki-3.0/core/sys/lc-switch.h \
-		/home/renzo/contiki-3.0/core/sys/cc.h \
-		/home/renzo/contiki-3.0/core/sys/autostart.h \
-		/home/renzo/contiki-3.0/core/sys/timer.h \
-		/home/renzo/contiki-3.0/core/sys/clock.h \
-		/home/renzo/contiki-3.0/core/sys/ctimer.h \
-		/home/renzo/contiki-3.0/core/sys/etimer.h \
-		/home/renzo/contiki-3.0/core/sys/rtimer.h \
-		/home/renzo/contiki-3.0/core/sys/procinit.h \
-		/home/renzo/contiki-3.0/core/sys/loader.h \
-		/home/renzo/contiki-3.0/core/sys/energest.h \
+control-flow-table.o: ../../sdn-common/control-flow-table.c ../../../../contiki-3.0/core/contiki.h \
+		../../../../contiki-3.0/core/contiki-version.h \
+		../../../../contiki-3.0/core/contiki-default-conf.h \
+		../../../../contiki-3.0/core/sys/process.h \
+		../../../../contiki-3.0/core/sys/pt.h \
+		../../../../contiki-3.0/core/sys/lc.h \
+		../../../../contiki-3.0/core/sys/lc-switch.h \
+		../../../../contiki-3.0/core/sys/cc.h \
+		../../../../contiki-3.0/core/sys/autostart.h \
+		../../../../contiki-3.0/core/sys/timer.h \
+		../../../../contiki-3.0/core/sys/clock.h \
+		../../../../contiki-3.0/core/sys/ctimer.h \
+		../../../../contiki-3.0/core/sys/etimer.h \
+		../../../../contiki-3.0/core/sys/rtimer.h \
+		../../../../contiki-3.0/core/sys/procinit.h \
+		../../../../contiki-3.0/core/sys/loader.h \
+		../../../../contiki-3.0/core/sys/energest.h \
 		../../sdn-common/sdn-unknown-route.h \
 		../../sdn-common/sdn-protocol.h \
 		../../sdn-common/data-flow-table.h \
 		../../sdn-common/sdn-addr.h \
 		../../sdn-common/sdn-constants.h \
 		../../sdn-common/control-flow-table.h \
-		/home/renzo/contiki-3.0/core/lib/list.h \
+		../../../../contiki-3.0/core/lib/list.h \
 		../../sdn-common/sdn-debug.h
 	$(CC) -c $(CFLAGS) $(INCPATH) -o control-flow-table.o ../../sdn-common/control-flow-table.c
 
-data-flow-table.o: ../../sdn-common/data-flow-table.c /home/renzo/contiki-3.0/core/contiki.h \
-		/home/renzo/contiki-3.0/core/contiki-version.h \
-		/home/renzo/contiki-3.0/core/contiki-default-conf.h \
-		/home/renzo/contiki-3.0/core/sys/process.h \
-		/home/renzo/contiki-3.0/core/sys/pt.h \
-		/home/renzo/contiki-3.0/core/sys/lc.h \
-		/home/renzo/contiki-3.0/core/sys/lc-switch.h \
-		/home/renzo/contiki-3.0/core/sys/cc.h \
-		/home/renzo/contiki-3.0/core/sys/autostart.h \
-		/home/renzo/contiki-3.0/core/sys/timer.h \
-		/home/renzo/contiki-3.0/core/sys/clock.h \
-		/home/renzo/contiki-3.0/core/sys/ctimer.h \
-		/home/renzo/contiki-3.0/core/sys/etimer.h \
-		/home/renzo/contiki-3.0/core/sys/rtimer.h \
-		/home/renzo/contiki-3.0/core/sys/procinit.h \
-		/home/renzo/contiki-3.0/core/sys/loader.h \
-		/home/renzo/contiki-3.0/core/sys/energest.h \
+data-flow-table.o: ../../sdn-common/data-flow-table.c ../../../../contiki-3.0/core/contiki.h \
+		../../../../contiki-3.0/core/contiki-version.h \
+		../../../../contiki-3.0/core/contiki-default-conf.h \
+		../../../../contiki-3.0/core/sys/process.h \
+		../../../../contiki-3.0/core/sys/pt.h \
+		../../../../contiki-3.0/core/sys/lc.h \
+		../../../../contiki-3.0/core/sys/lc-switch.h \
+		../../../../contiki-3.0/core/sys/cc.h \
+		../../../../contiki-3.0/core/sys/autostart.h \
+		../../../../contiki-3.0/core/sys/timer.h \
+		../../../../contiki-3.0/core/sys/clock.h \
+		../../../../contiki-3.0/core/sys/ctimer.h \
+		../../../../contiki-3.0/core/sys/etimer.h \
+		../../../../contiki-3.0/core/sys/rtimer.h \
+		../../../../contiki-3.0/core/sys/procinit.h \
+		../../../../contiki-3.0/core/sys/loader.h \
+		../../../../contiki-3.0/core/sys/energest.h \
 		../../sdn-common/sdn-unknown-route.h \
 		../../sdn-common/sdn-protocol.h \
 		../../sdn-common/data-flow-table.h \
 		../../sdn-common/sdn-addr.h \
 		../../sdn-common/sdn-constants.h \
 		../../sdn-common/control-flow-table.h \
-		/home/renzo/contiki-3.0/core/lib/list.h \
+		../../../../contiki-3.0/core/lib/list.h \
 		../../sdn-common/sdn-debug.h
 	$(CC) -c $(CFLAGS) $(INCPATH) -o data-flow-table.o ../../sdn-common/data-flow-table.c
 
@@ -1557,55 +1626,55 @@ sdn-debug.o: ../../sdn-common/sdn-debug.c ../../sdn-common/sdn-debug.h \
 		../../sdn-common/sdn-protocol.h
 	$(CC) -c $(CFLAGS) $(INCPATH) -o sdn-debug.o ../../sdn-common/sdn-debug.c
 
-sdn-packetbuf.o: ../../sdn-common/sdn-packetbuf.c /home/renzo/contiki-3.0/core/net/packetbuf.h \
-		/home/renzo/contiki-3.0/core/net/linkaddr.h \
-		/home/renzo/contiki-3.0/core/net/llsec/llsec802154.h \
-		/home/renzo/contiki-3.0/core/net/mac/frame802154.h \
-		/home/renzo/contiki-3.0/core/net/ip/uip.h \
-		/home/renzo/contiki-3.0/core/net/ip/uipopt.h \
-		/home/renzo/contiki-3.0/core/net/ip/tcpip.h \
-		/home/renzo/contiki-3.0/core/contiki.h \
-		/home/renzo/contiki-3.0/core/contiki-version.h \
-		/home/renzo/contiki-3.0/core/contiki-default-conf.h \
-		/home/renzo/contiki-3.0/core/sys/process.h \
-		/home/renzo/contiki-3.0/core/sys/pt.h \
-		/home/renzo/contiki-3.0/core/sys/lc.h \
-		/home/renzo/contiki-3.0/core/sys/lc-switch.h \
-		/home/renzo/contiki-3.0/core/sys/cc.h \
-		/home/renzo/contiki-3.0/core/sys/autostart.h \
-		/home/renzo/contiki-3.0/core/sys/timer.h \
-		/home/renzo/contiki-3.0/core/sys/clock.h \
-		/home/renzo/contiki-3.0/core/sys/ctimer.h \
-		/home/renzo/contiki-3.0/core/sys/etimer.h \
-		/home/renzo/contiki-3.0/core/sys/rtimer.h \
-		/home/renzo/contiki-3.0/core/sys/procinit.h \
-		/home/renzo/contiki-3.0/core/sys/loader.h \
-		/home/renzo/contiki-3.0/core/sys/energest.h \
+sdn-packetbuf.o: ../../sdn-common/sdn-packetbuf.c ../../../../contiki-3.0/core/net/packetbuf.h \
+		../../../../contiki-3.0/core/net/linkaddr.h \
+		../../../../contiki-3.0/core/net/llsec/llsec802154.h \
+		../../../../contiki-3.0/core/net/mac/frame802154.h \
+		../../../../contiki-3.0/core/net/ip/uip.h \
+		../../../../contiki-3.0/core/net/ip/uipopt.h \
+		../../../../contiki-3.0/core/net/ip/tcpip.h \
+		../../../../contiki-3.0/core/contiki.h \
+		../../../../contiki-3.0/core/contiki-version.h \
+		../../../../contiki-3.0/core/contiki-default-conf.h \
+		../../../../contiki-3.0/core/sys/process.h \
+		../../../../contiki-3.0/core/sys/pt.h \
+		../../../../contiki-3.0/core/sys/lc.h \
+		../../../../contiki-3.0/core/sys/lc-switch.h \
+		../../../../contiki-3.0/core/sys/cc.h \
+		../../../../contiki-3.0/core/sys/autostart.h \
+		../../../../contiki-3.0/core/sys/timer.h \
+		../../../../contiki-3.0/core/sys/clock.h \
+		../../../../contiki-3.0/core/sys/ctimer.h \
+		../../../../contiki-3.0/core/sys/etimer.h \
+		../../../../contiki-3.0/core/sys/rtimer.h \
+		../../../../contiki-3.0/core/sys/procinit.h \
+		../../../../contiki-3.0/core/sys/loader.h \
+		../../../../contiki-3.0/core/sys/energest.h \
 		../../sdn-common/sdn-debug.h \
 		../../sdn-common/sdn-packetbuf.h \
-		/home/renzo/contiki-3.0/core/lib/memb.h
+		../../../../contiki-3.0/core/lib/memb.h
 	$(CC) -c $(CFLAGS) $(INCPATH) -o sdn-packetbuf.o ../../sdn-common/sdn-packetbuf.c
 
 sdn-queue.o: ../../sdn-common/sdn-queue.c ../../sdn-common/sdn-queue.h \
 		../../sdn-common/sdn-protocol.h \
 		../../sdn-common/sdn-addr.h \
-		/home/renzo/contiki-3.0/core/contiki.h \
-		/home/renzo/contiki-3.0/core/contiki-version.h \
-		/home/renzo/contiki-3.0/core/contiki-default-conf.h \
-		/home/renzo/contiki-3.0/core/sys/process.h \
-		/home/renzo/contiki-3.0/core/sys/pt.h \
-		/home/renzo/contiki-3.0/core/sys/lc.h \
-		/home/renzo/contiki-3.0/core/sys/lc-switch.h \
-		/home/renzo/contiki-3.0/core/sys/cc.h \
-		/home/renzo/contiki-3.0/core/sys/autostart.h \
-		/home/renzo/contiki-3.0/core/sys/timer.h \
-		/home/renzo/contiki-3.0/core/sys/clock.h \
-		/home/renzo/contiki-3.0/core/sys/ctimer.h \
-		/home/renzo/contiki-3.0/core/sys/etimer.h \
-		/home/renzo/contiki-3.0/core/sys/rtimer.h \
-		/home/renzo/contiki-3.0/core/sys/procinit.h \
-		/home/renzo/contiki-3.0/core/sys/loader.h \
-		/home/renzo/contiki-3.0/core/sys/energest.h \
+		../../../../contiki-3.0/core/contiki.h \
+		../../../../contiki-3.0/core/contiki-version.h \
+		../../../../contiki-3.0/core/contiki-default-conf.h \
+		../../../../contiki-3.0/core/sys/process.h \
+		../../../../contiki-3.0/core/sys/pt.h \
+		../../../../contiki-3.0/core/sys/lc.h \
+		../../../../contiki-3.0/core/sys/lc-switch.h \
+		../../../../contiki-3.0/core/sys/cc.h \
+		../../../../contiki-3.0/core/sys/autostart.h \
+		../../../../contiki-3.0/core/sys/timer.h \
+		../../../../contiki-3.0/core/sys/clock.h \
+		../../../../contiki-3.0/core/sys/ctimer.h \
+		../../../../contiki-3.0/core/sys/etimer.h \
+		../../../../contiki-3.0/core/sys/rtimer.h \
+		../../../../contiki-3.0/core/sys/procinit.h \
+		../../../../contiki-3.0/core/sys/loader.h \
+		../../../../contiki-3.0/core/sys/energest.h \
 		../../sdn-common/sdn-debug.h \
 		../../sdn-common/sdn-constants.h \
 		../../sdn-common/sdn-serial-packet.h \
@@ -1615,28 +1684,28 @@ sdn-queue.o: ../../sdn-common/sdn-queue.c ../../sdn-common/sdn-queue.h \
 sdn-send-packet.o: ../../sdn-common/sdn-send-packet.c ../../sdn-common/sdn-send-packet.h \
 		../../sdn-common/sdn-protocol.h \
 		../../sdn-common/sdn-packetbuf.h \
-		/home/renzo/contiki-3.0/core/lib/memb.h \
-		/home/renzo/contiki-3.0/core/sys/cc.h \
+		../../../../contiki-3.0/core/lib/memb.h \
+		../../../../contiki-3.0/core/sys/cc.h \
 		../../sdn-common/sdn-debug.h \
 		../../sdn-common/sdn-constants.h \
 		../../sdn-common/sdn-queue.h \
 		../../sdn-common/sdn-addr.h \
-		/home/renzo/contiki-3.0/core/contiki.h \
-		/home/renzo/contiki-3.0/core/contiki-version.h \
-		/home/renzo/contiki-3.0/core/contiki-default-conf.h \
-		/home/renzo/contiki-3.0/core/sys/process.h \
-		/home/renzo/contiki-3.0/core/sys/pt.h \
-		/home/renzo/contiki-3.0/core/sys/lc.h \
-		/home/renzo/contiki-3.0/core/sys/lc-switch.h \
-		/home/renzo/contiki-3.0/core/sys/autostart.h \
-		/home/renzo/contiki-3.0/core/sys/timer.h \
-		/home/renzo/contiki-3.0/core/sys/clock.h \
-		/home/renzo/contiki-3.0/core/sys/ctimer.h \
-		/home/renzo/contiki-3.0/core/sys/etimer.h \
-		/home/renzo/contiki-3.0/core/sys/rtimer.h \
-		/home/renzo/contiki-3.0/core/sys/procinit.h \
-		/home/renzo/contiki-3.0/core/sys/loader.h \
-		/home/renzo/contiki-3.0/core/sys/energest.h \
+		../../../../contiki-3.0/core/contiki.h \
+		../../../../contiki-3.0/core/contiki-version.h \
+		../../../../contiki-3.0/core/contiki-default-conf.h \
+		../../../../contiki-3.0/core/sys/process.h \
+		../../../../contiki-3.0/core/sys/pt.h \
+		../../../../contiki-3.0/core/sys/lc.h \
+		../../../../contiki-3.0/core/sys/lc-switch.h \
+		../../../../contiki-3.0/core/sys/autostart.h \
+		../../../../contiki-3.0/core/sys/timer.h \
+		../../../../contiki-3.0/core/sys/clock.h \
+		../../../../contiki-3.0/core/sys/ctimer.h \
+		../../../../contiki-3.0/core/sys/etimer.h \
+		../../../../contiki-3.0/core/sys/rtimer.h \
+		../../../../contiki-3.0/core/sys/procinit.h \
+		../../../../contiki-3.0/core/sys/loader.h \
+		../../../../contiki-3.0/core/sys/energest.h \
 		../sdn-serial-send.h \
 		../../sdn-common/sdn-common-send.h \
 		../../sdn-common/sdn-serial-packet.h \
@@ -1646,23 +1715,23 @@ sdn-send-packet.o: ../../sdn-common/sdn-send-packet.c ../../sdn-common/sdn-send-
 	$(CC) -c $(CFLAGS) $(INCPATH) -o sdn-send-packet.o ../../sdn-common/sdn-send-packet.c
 
 sdn-process-packets.o: ../../sdn-common/sdn-process-packets.c ../../sdn-common/sdn-process-packets.h \
-		/home/renzo/contiki-3.0/core/contiki.h \
-		/home/renzo/contiki-3.0/core/contiki-version.h \
-		/home/renzo/contiki-3.0/core/contiki-default-conf.h \
-		/home/renzo/contiki-3.0/core/sys/process.h \
-		/home/renzo/contiki-3.0/core/sys/pt.h \
-		/home/renzo/contiki-3.0/core/sys/lc.h \
-		/home/renzo/contiki-3.0/core/sys/lc-switch.h \
-		/home/renzo/contiki-3.0/core/sys/cc.h \
-		/home/renzo/contiki-3.0/core/sys/autostart.h \
-		/home/renzo/contiki-3.0/core/sys/timer.h \
-		/home/renzo/contiki-3.0/core/sys/clock.h \
-		/home/renzo/contiki-3.0/core/sys/ctimer.h \
-		/home/renzo/contiki-3.0/core/sys/etimer.h \
-		/home/renzo/contiki-3.0/core/sys/rtimer.h \
-		/home/renzo/contiki-3.0/core/sys/procinit.h \
-		/home/renzo/contiki-3.0/core/sys/loader.h \
-		/home/renzo/contiki-3.0/core/sys/energest.h \
+		../../../../contiki-3.0/core/contiki.h \
+		../../../../contiki-3.0/core/contiki-version.h \
+		../../../../contiki-3.0/core/contiki-default-conf.h \
+		../../../../contiki-3.0/core/sys/process.h \
+		../../../../contiki-3.0/core/sys/pt.h \
+		../../../../contiki-3.0/core/sys/lc.h \
+		../../../../contiki-3.0/core/sys/lc-switch.h \
+		../../../../contiki-3.0/core/sys/cc.h \
+		../../../../contiki-3.0/core/sys/autostart.h \
+		../../../../contiki-3.0/core/sys/timer.h \
+		../../../../contiki-3.0/core/sys/clock.h \
+		../../../../contiki-3.0/core/sys/ctimer.h \
+		../../../../contiki-3.0/core/sys/etimer.h \
+		../../../../contiki-3.0/core/sys/rtimer.h \
+		../../../../contiki-3.0/core/sys/procinit.h \
+		../../../../contiki-3.0/core/sys/loader.h \
+		../../../../contiki-3.0/core/sys/energest.h \
 		../../sdn-common/data-flow-table.h \
 		../../sdn-common/sdn-addr.h \
 		../../sdn-common/sdn-protocol.h \
@@ -1680,7 +1749,7 @@ sdn-process-packets.o: ../../sdn-common/sdn-process-packets.c ../../sdn-common/s
 		../../sdn-common/sdn-node-security-module.h \
 		../../sdn-common/sdn-send-packet.h \
 		../../sdn-common/sdn-packetbuf.h \
-		/home/renzo/contiki-3.0/core/lib/memb.h \
+		../../../../contiki-3.0/core/lib/memb.h \
 		../../sdn-common/ids-data.h \
 		../sdn-security-module.h \
 		../sdn-metrics-cal.h \
@@ -1694,25 +1763,25 @@ sdn-unknown-route.o: ../../sdn-common/sdn-unknown-route.c ../../sdn-common/sdn-u
 		../../sdn-common/sdn-constants.h \
 		../../sdn-common/control-flow-table.h \
 		../../sdn-common/sdn-queue.h \
-		/home/renzo/contiki-3.0/core/contiki.h \
-		/home/renzo/contiki-3.0/core/contiki-version.h \
-		/home/renzo/contiki-3.0/core/contiki-default-conf.h \
-		/home/renzo/contiki-3.0/core/sys/process.h \
-		/home/renzo/contiki-3.0/core/sys/pt.h \
-		/home/renzo/contiki-3.0/core/sys/lc.h \
-		/home/renzo/contiki-3.0/core/sys/lc-switch.h \
-		/home/renzo/contiki-3.0/core/sys/cc.h \
-		/home/renzo/contiki-3.0/core/sys/autostart.h \
-		/home/renzo/contiki-3.0/core/sys/timer.h \
-		/home/renzo/contiki-3.0/core/sys/clock.h \
-		/home/renzo/contiki-3.0/core/sys/ctimer.h \
-		/home/renzo/contiki-3.0/core/sys/etimer.h \
-		/home/renzo/contiki-3.0/core/sys/rtimer.h \
-		/home/renzo/contiki-3.0/core/sys/procinit.h \
-		/home/renzo/contiki-3.0/core/sys/loader.h \
-		/home/renzo/contiki-3.0/core/sys/energest.h \
+		../../../../contiki-3.0/core/contiki.h \
+		../../../../contiki-3.0/core/contiki-version.h \
+		../../../../contiki-3.0/core/contiki-default-conf.h \
+		../../../../contiki-3.0/core/sys/process.h \
+		../../../../contiki-3.0/core/sys/pt.h \
+		../../../../contiki-3.0/core/sys/lc.h \
+		../../../../contiki-3.0/core/sys/lc-switch.h \
+		../../../../contiki-3.0/core/sys/cc.h \
+		../../../../contiki-3.0/core/sys/autostart.h \
+		../../../../contiki-3.0/core/sys/timer.h \
+		../../../../contiki-3.0/core/sys/clock.h \
+		../../../../contiki-3.0/core/sys/ctimer.h \
+		../../../../contiki-3.0/core/sys/etimer.h \
+		../../../../contiki-3.0/core/sys/rtimer.h \
+		../../../../contiki-3.0/core/sys/procinit.h \
+		../../../../contiki-3.0/core/sys/loader.h \
+		../../../../contiki-3.0/core/sys/energest.h \
 		../../sdn-common/sdn-packetbuf.h \
-		/home/renzo/contiki-3.0/core/lib/memb.h \
+		../../../../contiki-3.0/core/lib/memb.h \
 		../../sdn-common/sdn-send-packet.h \
 		../../sdn-common/sdn-debug.h \
 		../sdn-serial-send.h \
@@ -1724,8 +1793,8 @@ ids-data.o: ../../sdn-common/ids-data.c ../../sdn-common/sdn-addr.h \
 		../../sdn-common/ids-data.h
 	$(CC) -c $(CFLAGS) $(INCPATH) -o ids-data.o ../../sdn-common/ids-data.c
 
-list.o: /home/renzo/contiki-3.0/core/lib/list.c /home/renzo/contiki-3.0/core/lib/list.h
-	$(CC) -c $(CFLAGS) $(INCPATH) -o list.o /home/renzo/contiki-3.0/core/lib/list.c
+list.o: ../../../../contiki-3.0/core/lib/list.c ../../../../contiki-3.0/core/lib/list.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o list.o ../../../../contiki-3.0/core/lib/list.c
 
 digraph.o: ../digraph/digraph.c ../digraph/digraph.h \
 		../digraph/sdn-metric.h
@@ -1755,28 +1824,28 @@ controller-core.o: ../controller-core.c ../controller-core.h \
 		../../sdn-common/sdn-constants.h \
 		../../sdn-common/data-flow-table.h \
 		../../sdn-common/sdn-queue.h \
-		/home/renzo/contiki-3.0/core/contiki.h \
-		/home/renzo/contiki-3.0/core/contiki-version.h \
-		/home/renzo/contiki-3.0/core/contiki-default-conf.h \
-		/home/renzo/contiki-3.0/core/sys/process.h \
-		/home/renzo/contiki-3.0/core/sys/pt.h \
-		/home/renzo/contiki-3.0/core/sys/lc.h \
-		/home/renzo/contiki-3.0/core/sys/lc-switch.h \
-		/home/renzo/contiki-3.0/core/sys/cc.h \
-		/home/renzo/contiki-3.0/core/sys/autostart.h \
-		/home/renzo/contiki-3.0/core/sys/timer.h \
-		/home/renzo/contiki-3.0/core/sys/clock.h \
-		/home/renzo/contiki-3.0/core/sys/ctimer.h \
-		/home/renzo/contiki-3.0/core/sys/etimer.h \
-		/home/renzo/contiki-3.0/core/sys/rtimer.h \
-		/home/renzo/contiki-3.0/core/sys/procinit.h \
-		/home/renzo/contiki-3.0/core/sys/loader.h \
-		/home/renzo/contiki-3.0/core/sys/energest.h \
+		../../../../contiki-3.0/core/contiki.h \
+		../../../../contiki-3.0/core/contiki-version.h \
+		../../../../contiki-3.0/core/contiki-default-conf.h \
+		../../../../contiki-3.0/core/sys/process.h \
+		../../../../contiki-3.0/core/sys/pt.h \
+		../../../../contiki-3.0/core/sys/lc.h \
+		../../../../contiki-3.0/core/sys/lc-switch.h \
+		../../../../contiki-3.0/core/sys/cc.h \
+		../../../../contiki-3.0/core/sys/autostart.h \
+		../../../../contiki-3.0/core/sys/timer.h \
+		../../../../contiki-3.0/core/sys/clock.h \
+		../../../../contiki-3.0/core/sys/ctimer.h \
+		../../../../contiki-3.0/core/sys/etimer.h \
+		../../../../contiki-3.0/core/sys/rtimer.h \
+		../../../../contiki-3.0/core/sys/procinit.h \
+		../../../../contiki-3.0/core/sys/loader.h \
+		../../../../contiki-3.0/core/sys/energest.h \
 		../sdn-serial-send.h \
 		../../sdn-common/sdn-common-send.h \
 		../../sdn-common/sdn-send-packet.h \
 		../../sdn-common/sdn-packetbuf.h \
-		/home/renzo/contiki-3.0/core/lib/memb.h \
+		../../../../contiki-3.0/core/lib/memb.h \
 		../../sdn-common/sdn-process-packets.h \
 		../controller-pc/mainwindow_wrapper.h
 	$(CC) -c $(CFLAGS) $(INCPATH) -o controller-core.o ../controller-core.c
@@ -1788,23 +1857,23 @@ sdn-flow-table-cache.o: ../sdn-flow-table-cache.c ../sdn-flow-table-cache.h \
 		../sdn-serial-send.h \
 		../../sdn-common/sdn-constants.h \
 		../../sdn-common/sdn-queue.h \
-		/home/renzo/contiki-3.0/core/contiki.h \
-		/home/renzo/contiki-3.0/core/contiki-version.h \
-		/home/renzo/contiki-3.0/core/contiki-default-conf.h \
-		/home/renzo/contiki-3.0/core/sys/process.h \
-		/home/renzo/contiki-3.0/core/sys/pt.h \
-		/home/renzo/contiki-3.0/core/sys/lc.h \
-		/home/renzo/contiki-3.0/core/sys/lc-switch.h \
-		/home/renzo/contiki-3.0/core/sys/cc.h \
-		/home/renzo/contiki-3.0/core/sys/autostart.h \
-		/home/renzo/contiki-3.0/core/sys/timer.h \
-		/home/renzo/contiki-3.0/core/sys/clock.h \
-		/home/renzo/contiki-3.0/core/sys/ctimer.h \
-		/home/renzo/contiki-3.0/core/sys/etimer.h \
-		/home/renzo/contiki-3.0/core/sys/rtimer.h \
-		/home/renzo/contiki-3.0/core/sys/procinit.h \
-		/home/renzo/contiki-3.0/core/sys/loader.h \
-		/home/renzo/contiki-3.0/core/sys/energest.h \
+		../../../../contiki-3.0/core/contiki.h \
+		../../../../contiki-3.0/core/contiki-version.h \
+		../../../../contiki-3.0/core/contiki-default-conf.h \
+		../../../../contiki-3.0/core/sys/process.h \
+		../../../../contiki-3.0/core/sys/pt.h \
+		../../../../contiki-3.0/core/sys/lc.h \
+		../../../../contiki-3.0/core/sys/lc-switch.h \
+		../../../../contiki-3.0/core/sys/cc.h \
+		../../../../contiki-3.0/core/sys/autostart.h \
+		../../../../contiki-3.0/core/sys/timer.h \
+		../../../../contiki-3.0/core/sys/clock.h \
+		../../../../contiki-3.0/core/sys/ctimer.h \
+		../../../../contiki-3.0/core/sys/etimer.h \
+		../../../../contiki-3.0/core/sys/rtimer.h \
+		../../../../contiki-3.0/core/sys/procinit.h \
+		../../../../contiki-3.0/core/sys/loader.h \
+		../../../../contiki-3.0/core/sys/energest.h \
 		../../sdn-common/sdn-common-send.h
 	$(CC) -c $(CFLAGS) $(INCPATH) -o sdn-flow-table-cache.o ../sdn-flow-table-cache.c
 
@@ -1813,27 +1882,27 @@ sdn-serial-send.o: ../sdn-serial-send.c ../sdn-serial-send.h \
 		../../sdn-common/sdn-protocol.h \
 		../../sdn-common/sdn-constants.h \
 		../../sdn-common/sdn-queue.h \
-		/home/renzo/contiki-3.0/core/contiki.h \
-		/home/renzo/contiki-3.0/core/contiki-version.h \
-		/home/renzo/contiki-3.0/core/contiki-default-conf.h \
-		/home/renzo/contiki-3.0/core/sys/process.h \
-		/home/renzo/contiki-3.0/core/sys/pt.h \
-		/home/renzo/contiki-3.0/core/sys/lc.h \
-		/home/renzo/contiki-3.0/core/sys/lc-switch.h \
-		/home/renzo/contiki-3.0/core/sys/cc.h \
-		/home/renzo/contiki-3.0/core/sys/autostart.h \
-		/home/renzo/contiki-3.0/core/sys/timer.h \
-		/home/renzo/contiki-3.0/core/sys/clock.h \
-		/home/renzo/contiki-3.0/core/sys/ctimer.h \
-		/home/renzo/contiki-3.0/core/sys/etimer.h \
-		/home/renzo/contiki-3.0/core/sys/rtimer.h \
-		/home/renzo/contiki-3.0/core/sys/procinit.h \
-		/home/renzo/contiki-3.0/core/sys/loader.h \
-		/home/renzo/contiki-3.0/core/sys/energest.h \
+		../../../../contiki-3.0/core/contiki.h \
+		../../../../contiki-3.0/core/contiki-version.h \
+		../../../../contiki-3.0/core/contiki-default-conf.h \
+		../../../../contiki-3.0/core/sys/process.h \
+		../../../../contiki-3.0/core/sys/pt.h \
+		../../../../contiki-3.0/core/sys/lc.h \
+		../../../../contiki-3.0/core/sys/lc-switch.h \
+		../../../../contiki-3.0/core/sys/cc.h \
+		../../../../contiki-3.0/core/sys/autostart.h \
+		../../../../contiki-3.0/core/sys/timer.h \
+		../../../../contiki-3.0/core/sys/clock.h \
+		../../../../contiki-3.0/core/sys/ctimer.h \
+		../../../../contiki-3.0/core/sys/etimer.h \
+		../../../../contiki-3.0/core/sys/rtimer.h \
+		../../../../contiki-3.0/core/sys/procinit.h \
+		../../../../contiki-3.0/core/sys/loader.h \
+		../../../../contiki-3.0/core/sys/energest.h \
 		../../sdn-common/sdn-common-send.h \
 		../../sdn-common/sdn-debug.h \
 		../../sdn-common/sdn-packetbuf.h \
-		/home/renzo/contiki-3.0/core/lib/memb.h \
+		../../../../contiki-3.0/core/lib/memb.h \
 		../../sdn-common/sdn-process-packets.h \
 		../../sdn-common/data-flow-table.h \
 		../../sdn-common/control-flow-table.h \
@@ -1849,29 +1918,29 @@ sdn-process-packets-controller.o: ../sdn-process-packets-controller.c ../../sdn-
 		../sdn-serial-send.h \
 		../../sdn-common/sdn-constants.h \
 		../../sdn-common/sdn-queue.h \
-		/home/renzo/contiki-3.0/core/contiki.h \
-		/home/renzo/contiki-3.0/core/contiki-version.h \
-		/home/renzo/contiki-3.0/core/contiki-default-conf.h \
-		/home/renzo/contiki-3.0/core/sys/process.h \
-		/home/renzo/contiki-3.0/core/sys/pt.h \
-		/home/renzo/contiki-3.0/core/sys/lc.h \
-		/home/renzo/contiki-3.0/core/sys/lc-switch.h \
-		/home/renzo/contiki-3.0/core/sys/cc.h \
-		/home/renzo/contiki-3.0/core/sys/autostart.h \
-		/home/renzo/contiki-3.0/core/sys/timer.h \
-		/home/renzo/contiki-3.0/core/sys/clock.h \
-		/home/renzo/contiki-3.0/core/sys/ctimer.h \
-		/home/renzo/contiki-3.0/core/sys/etimer.h \
-		/home/renzo/contiki-3.0/core/sys/rtimer.h \
-		/home/renzo/contiki-3.0/core/sys/procinit.h \
-		/home/renzo/contiki-3.0/core/sys/loader.h \
-		/home/renzo/contiki-3.0/core/sys/energest.h \
+		../../../../contiki-3.0/core/contiki.h \
+		../../../../contiki-3.0/core/contiki-version.h \
+		../../../../contiki-3.0/core/contiki-default-conf.h \
+		../../../../contiki-3.0/core/sys/process.h \
+		../../../../contiki-3.0/core/sys/pt.h \
+		../../../../contiki-3.0/core/sys/lc.h \
+		../../../../contiki-3.0/core/sys/lc-switch.h \
+		../../../../contiki-3.0/core/sys/cc.h \
+		../../../../contiki-3.0/core/sys/autostart.h \
+		../../../../contiki-3.0/core/sys/timer.h \
+		../../../../contiki-3.0/core/sys/clock.h \
+		../../../../contiki-3.0/core/sys/ctimer.h \
+		../../../../contiki-3.0/core/sys/etimer.h \
+		../../../../contiki-3.0/core/sys/rtimer.h \
+		../../../../contiki-3.0/core/sys/procinit.h \
+		../../../../contiki-3.0/core/sys/loader.h \
+		../../../../contiki-3.0/core/sys/energest.h \
 		../../sdn-common/sdn-common-send.h \
 		../../sdn-common/control-flow-table.h \
 		../../sdn-common/data-flow-table.h \
 		../../sdn-common/sdn-send-packet.h \
 		../../sdn-common/sdn-packetbuf.h \
-		/home/renzo/contiki-3.0/core/lib/memb.h \
+		../../../../contiki-3.0/core/lib/memb.h \
 		../../sdn-common/sdn-serial-packet.h \
 		../sdn-process-packets-controller.h \
 		../digraph/dijkstra.h \
@@ -1883,28 +1952,28 @@ sdn-reliability.o: ../sdn-reliability.c ../../sdn-common/sdn-debug.h \
 		../sdn-reliability.h \
 		../../sdn-common/sdn-send-packet.h \
 		../../sdn-common/sdn-packetbuf.h \
-		/home/renzo/contiki-3.0/core/lib/memb.h \
-		/home/renzo/contiki-3.0/core/sys/cc.h \
+		../../../../contiki-3.0/core/lib/memb.h \
+		../../../../contiki-3.0/core/sys/cc.h \
 		../sdn-serial-send.h \
 		../../sdn-common/sdn-addr.h \
 		../../sdn-common/sdn-constants.h \
 		../../sdn-common/sdn-queue.h \
-		/home/renzo/contiki-3.0/core/contiki.h \
-		/home/renzo/contiki-3.0/core/contiki-version.h \
-		/home/renzo/contiki-3.0/core/contiki-default-conf.h \
-		/home/renzo/contiki-3.0/core/sys/process.h \
-		/home/renzo/contiki-3.0/core/sys/pt.h \
-		/home/renzo/contiki-3.0/core/sys/lc.h \
-		/home/renzo/contiki-3.0/core/sys/lc-switch.h \
-		/home/renzo/contiki-3.0/core/sys/autostart.h \
-		/home/renzo/contiki-3.0/core/sys/timer.h \
-		/home/renzo/contiki-3.0/core/sys/clock.h \
-		/home/renzo/contiki-3.0/core/sys/ctimer.h \
-		/home/renzo/contiki-3.0/core/sys/etimer.h \
-		/home/renzo/contiki-3.0/core/sys/rtimer.h \
-		/home/renzo/contiki-3.0/core/sys/procinit.h \
-		/home/renzo/contiki-3.0/core/sys/loader.h \
-		/home/renzo/contiki-3.0/core/sys/energest.h \
+		../../../../contiki-3.0/core/contiki.h \
+		../../../../contiki-3.0/core/contiki-version.h \
+		../../../../contiki-3.0/core/contiki-default-conf.h \
+		../../../../contiki-3.0/core/sys/process.h \
+		../../../../contiki-3.0/core/sys/pt.h \
+		../../../../contiki-3.0/core/sys/lc.h \
+		../../../../contiki-3.0/core/sys/lc-switch.h \
+		../../../../contiki-3.0/core/sys/autostart.h \
+		../../../../contiki-3.0/core/sys/timer.h \
+		../../../../contiki-3.0/core/sys/clock.h \
+		../../../../contiki-3.0/core/sys/ctimer.h \
+		../../../../contiki-3.0/core/sys/etimer.h \
+		../../../../contiki-3.0/core/sys/rtimer.h \
+		../../../../contiki-3.0/core/sys/procinit.h \
+		../../../../contiki-3.0/core/sys/loader.h \
+		../../../../contiki-3.0/core/sys/energest.h \
 		../../sdn-common/sdn-common-send.h \
 		../sdn-flow-table-cache.h \
 		../digraph/digraph.h \

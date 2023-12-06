@@ -54,7 +54,7 @@
 
 #define SENSING_AT_SECONDS 60
 #define IDS_TIMER 120
-#define ATTACK_TRIGGER 100
+#define ATTACK_TRIGGER 14000
 // #define ATTACK_TRIGGER 28800
 #ifdef ATTACK_SIXTY
 #define ATTACK_PERIOD 60
@@ -74,7 +74,7 @@ PROCESS(sdn_test_process, "Contiki SDN example process");
 AUTOSTART_PROCESSES(&sdn_test_process);
 
 
-uint16_t temp_flowid[4];
+uint16_t temp_flowid[6];
 static struct ctimer attack_timer;
 
 
@@ -102,11 +102,10 @@ static uint8_t isSensing() {
 static void create_false_flows();
 
 static void create_false_flows() {
-  printf("entrou");
   
   uint8_t n;
 
-  for(n = 0; n <= 3; n++) {
+  for(n = 0; n <= 5; n++) {
     if ((temp_flowid[n] > 0)) {
       //printf("Removing flow: %u\n", temp_flowid[n]);
       sdn_dataflow_remove(temp_flowid[n]);  
@@ -116,90 +115,84 @@ static void create_false_flows() {
   sdn_dataflow_print();
 
 /*-----------Maybe it wont be necessary-----------------------*/
-  // MEMB(new_neighbor_table_memb, struct sdn_neighbor_entry, 4);
+  struct collect_neighbor_list neighbors_copy_list1;
+  struct collect_neighbor_list neighbors_copy_list2;
 
-  // struct collect_neighbor_list neighbors_copy_list;
+  struct collect_conn tc;
   
-  // struct collect_conn tc;
+  memcpy(&tc, collect_pointer(), sizeof(struct collect_conn));
   
-  // memcpy(&tc, collect_pointer(), sizeof(struct collect_conn));
-  
-  // neighbors_copy_list.list = collect_neighbor_list(&tc.neighbor_list);
-  // // // Allocate memory for the new entries.
-  // struct sdn_neighbor_entry *n1 = memb_alloc(&new_neighbor_table_memb);
-  // struct sdn_neighbor_entry *n2 = memb_alloc(&new_neighbor_table_memb);
-  // struct sdn_neighbor_entry *n3 = memb_alloc(&new_neighbor_table_memb);
-  // struct sdn_neighbor_entry *n4 = memb_alloc(&new_neighbor_table_memb);
-
-
-  // // // Check if memory allocation was successful.
-  // if (n1 == NULL || n2 == NULL || n3 == NULL || n4 == NULL) {
-  //     SDN_DEBUG("Failed to allocate memory for new neighbor entries!\n");
-  //     return; // or handle the error as appropriate
-  // }
-
-  // // Set the metrics.
-  // n1->metric = 0;
-  // n2->metric = 0;
-  // n3->metric = 0;
-  // n4->metric = 0;
-
-  // Allocate extra_info (if necessary).
-  // n1->extra_info = memb_alloc(NULL); // Assuming the correct memory block is passed
-  // n2->extra_info = memb_alloc(NULL); // or NULL if it's not required
-  // n3->extra_info = memb_alloc(NULL); // or NULL if it's not required
-  // n4->extra_info = memb_alloc(NULL); // or NULL if it's not required
-
-  // Set the neighbor addresses.
-  // sdnaddr_t neighbor_addr1 = {{0x08, 0x00}};// adiciona o endereco 08
-  // sdnaddr_t neighbor_addr2 = {{0x17, 0x00}};// adiciona o endereco 23
-  // sdnaddr_t neighbor_addr3 = {{0x1C, 0x00}};// adiciona o endereco 28
-  // sdnaddr_t neighbor_addr4 = {{0x1D, 0x00}};// adiciona o endereco 29
-
-
-  // sdnaddr_copy(&n1->neighbor_addr, &neighbor_addr1);
-  // sdnaddr_copy(&n2->neighbor_addr, &neighbor_addr2);
-  // sdnaddr_copy(&n3->neighbor_addr, &neighbor_addr3);
-  // sdnaddr_copy(&n4->neighbor_addr, &neighbor_addr4);
-
-
-  // // Add the new entries to the list.
-  // // list_add(neighbors_copy_list.list, n1);
-  // // list_add(neighbors_copy_list.list, n2);
-  // // list_add(neighbors_copy_list.list, n3);
-  // // list_add(neighbors_copy_list.list, n4);
-
- /*----------------------------------------------------------*/
- 
+  neighbors_copy_list1.list = collect_neighbor_list(&tc.neighbor_list);
+  neighbors_copy_list2.list = collect_neighbor_list(&tc.neighbor_list);
 
   struct sdn_neighbor_entry *neighbor;
   struct sdn_neighbor_entry *neighbor_next;
+  struct sdn_neighbor_entry *neighbor_next_next;
+  struct sdn_neighbor_entry *neighbor_next_next_next;
+  struct sdn_neighbor_entry *neighbor_copy_head;
+
+  neighbor_copy_head = list_head(neighbors_copy_list1.list);
+
+  neighbor_next = list_item_next(neighbor_copy_head);
+  neighbor_next_next = list_item_next(neighbor_next);
+  neighbor_next_next_next = list_item_next(neighbor_next_next);
+
+  sdnaddr_t new_address1 =  {{0x08, 0x00}};
+  sdnaddr_t new_address2 =  {{0x17, 0x00}};
+  sdnaddr_t new_address3 =  {{0x1C, 0x00}};
+  sdnaddr_t new_address4 =  {{0x1D, 0x00}};
+
+  sdnaddr_copy(&neighbor_copy_head->neighbor_addr, &new_address1);
+  sdnaddr_copy(&neighbor_next->neighbor_addr, &new_address2);
+  sdnaddr_copy(&neighbor_next_next->neighbor_addr, &new_address3);
+  sdnaddr_copy(&neighbor_next_next_next->neighbor_addr, &new_address4);
 
   static char false_data[10];
 
   n = 0;
 
-  neighbor = sdn_neighbor_table_head();
-  neighbor_next = list_item_next(neighbor);
+  int j;
 
-  sdnaddr_t new_address1 =  {{0x08, 0x00}};
-  sdnaddr_t new_address2 =  {{0x17, 0x00}};
-
-  sdnaddr_copy(&neighbor->neighbor_addr, &new_address1);// muda o endereco 08
-  sdnaddr_copy(&neighbor_next->neighbor_addr, &new_address2);// muda o endereco 23
-
-
-  for(neighbor; neighbor != NULL; ) {
+  for(j = 0; j <=3 ; j++) {
     flowid_t random_flow;
-    neighbor_next = list_item_next(neighbor);
+    neighbor_next = list_item_next(neighbor_copy_head);
     random_flow = 10 + (random_rand() % 1000);
     temp_flowid[n] = random_flow;
-    sdn_dataflow_insert(random_flow, neighbor->neighbor_addr, SDN_ACTION_FORWARD);
+    sdn_dataflow_insert(random_flow, neighbor_copy_head->neighbor_addr, SDN_ACTION_FORWARD);
     printf("Sending data to false flow: %d\n", random_flow);
-    printf("Copia da lista endereco vizinho : %d\n", neighbor->neighbor_addr);
     // SDN_DEBUG("Sending data to false flow: %d\n", random_flow);
     sdn_send((uint8_t*) false_data, 10, random_flow);
-    neighbor = neighbor_next;
+    neighbor_copy_head = neighbor_next;
+    n++;
+  }
+
+//copia
+  struct sdn_neighbor_entry *neighbor_copy_head2;
+  struct sdn_neighbor_entry *neighbor_copy_next;
+
+  neighbor_copy_head2 = list_head(neighbors_copy_list2.list);
+  neighbor_copy_next = list_item_next(neighbor_copy_head2);
+
+  sdnaddr_t new_address5 =  {{0x21, 0x00}};//33
+  sdnaddr_t new_address6 =  {{0x03, 0x00}};//3
+
+
+  sdnaddr_copy(&neighbor_copy_head2->neighbor_addr, &new_address5);
+  sdnaddr_copy(&neighbor_copy_next->neighbor_addr, &new_address6);
+
+
+  int i;
+
+  for(i = 0; i <=1 ; i++) {
+    flowid_t random_flow;
+    neighbor_next = list_item_next(neighbor_copy_head2);
+    random_flow = 10 + (random_rand() % 1000);
+    temp_flowid[n] = random_flow;
+    sdn_dataflow_insert(random_flow, neighbor_copy_head2->neighbor_addr, SDN_ACTION_FORWARD);
+    printf("Sending data to false flow: %d\n", random_flow);
+    // SDN_DEBUG("Sending data to false flow: %d\n", random_flow);
+    sdn_send((uint8_t*) false_data, 10, random_flow);
+    neighbor_copy_head2 = neighbor_next;
     n++;
   }
 

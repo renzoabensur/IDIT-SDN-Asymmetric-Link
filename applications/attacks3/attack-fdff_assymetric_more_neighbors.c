@@ -74,7 +74,7 @@ PROCESS(sdn_test_process, "Contiki SDN example process");
 AUTOSTART_PROCESSES(&sdn_test_process);
 
 
-uint16_t temp_flowid[6];
+uint16_t temp_flowid[8];
 static struct ctimer attack_timer;
 
 
@@ -105,7 +105,7 @@ static void create_false_flows() {
   
   uint8_t n;
 
-  for(n = 0; n <= 5; n++) {
+  for(n = 0; n <= 7; n++) {
     if ((temp_flowid[n] > 0)) {
       //printf("Removing flow: %u\n", temp_flowid[n]);
       sdn_dataflow_remove(temp_flowid[n]);  
@@ -125,6 +125,7 @@ static void create_false_flows() {
   neighbors_copy_list1.list = collect_neighbor_list(&tc.neighbor_list);
   neighbors_copy_list2.list = collect_neighbor_list(&tc.neighbor_list);
 
+ //muda o endereco de ddos nos vizinhos
   struct sdn_neighbor_entry *neighbor;
   struct sdn_neighbor_entry *neighbor_next;
   struct sdn_neighbor_entry *neighbor_next_next;
@@ -133,6 +134,7 @@ static void create_false_flows() {
 
   neighbor_copy_head = list_head(neighbors_copy_list1.list);
 
+  // neighbor_copy_head = sdn_neighbor_table_head();
   neighbor_next = list_item_next(neighbor_copy_head);
   neighbor_next_next = list_item_next(neighbor_next);
   neighbor_next_next_next = list_item_next(neighbor_next_next);
@@ -160,6 +162,7 @@ static void create_false_flows() {
     temp_flowid[n] = random_flow;
     sdn_dataflow_insert(random_flow, neighbor_copy_head->neighbor_addr, SDN_ACTION_FORWARD);
     printf("Sending data to false flow: %d\n", random_flow);
+    printf("Copia da lista endereco vizinho : %d\n", neighbor_copy_head->neighbor_addr);
     // SDN_DEBUG("Sending data to false flow: %d\n", random_flow);
     sdn_send((uint8_t*) false_data, 10, random_flow);
     neighbor_copy_head = neighbor_next;
@@ -169,27 +172,39 @@ static void create_false_flows() {
 //copia
   struct sdn_neighbor_entry *neighbor_copy_head2;
   struct sdn_neighbor_entry *neighbor_copy_next;
+  struct sdn_neighbor_entry *neighbor_copy_next_next;
+  struct sdn_neighbor_entry *neighbor_copy_next_next_next;
+
 
   neighbor_copy_head2 = list_head(neighbors_copy_list2.list);
   neighbor_copy_next = list_item_next(neighbor_copy_head2);
+  neighbor_copy_next_next = list_item_next(neighbor_copy_next);
+  neighbor_copy_next_next_next = list_item_next(neighbor_copy_next_next);
+
 
   sdnaddr_t new_address5 =  {{0x21, 0x00}};//33
   sdnaddr_t new_address6 =  {{0x03, 0x00}};//3
+  sdnaddr_t new_address7 =  {{0x26, 0x00}};//38
+  sdnaddr_t new_address8 =  {{0x24, 0x00}};//36
 
 
   sdnaddr_copy(&neighbor_copy_head2->neighbor_addr, &new_address5);
   sdnaddr_copy(&neighbor_copy_next->neighbor_addr, &new_address6);
+  sdnaddr_copy(&neighbor_copy_next_next->neighbor_addr, &new_address7);
+  sdnaddr_copy(&neighbor_copy_next_next_next->neighbor_addr, &new_address8);
+
 
 
   int i;
 
-  for(i = 0; i <=1 ; i++) {
+  for(i = 0; i <= 3 ; i++) {
     flowid_t random_flow;
     neighbor_next = list_item_next(neighbor_copy_head2);
     random_flow = 10 + (random_rand() % 1000);
     temp_flowid[n] = random_flow;
     sdn_dataflow_insert(random_flow, neighbor_copy_head2->neighbor_addr, SDN_ACTION_FORWARD);
     printf("Sending data to false flow: %d\n", random_flow);
+    printf("Copia2 da lista endereco vizinho : %d\n", neighbor_copy_head2->neighbor_addr);
     // SDN_DEBUG("Sending data to false flow: %d\n", random_flow);
     sdn_send((uint8_t*) false_data, 10, random_flow);
     neighbor_copy_head2 = neighbor_next;

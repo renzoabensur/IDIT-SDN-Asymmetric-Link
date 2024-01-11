@@ -1,4 +1,4 @@
-CONTIKI?=/home/renzo/Documents/contiki-3.0
+CONTIKI?=/home/renzo/contiki-3.0
 
 CONTIKIDIRS += ../contiki-sdn/
 CONTIKIDIRS += ../contiki-sdn/collect-sdn/

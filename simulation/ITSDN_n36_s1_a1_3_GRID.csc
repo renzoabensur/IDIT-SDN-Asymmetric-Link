@@ -879,10 +879,10 @@
     <plugin_config>
       <script>sim.setSpeedLimit(4.0);
 
-TIMEOUT(18000000);
+TIMEOUT(1800000);
 
 FileWriter=Java.type("java.io.FileWriter");
-my_output = new FileWriter("/home/renzo/Documents/TCC/IDIT-SDN-Asymmetric-Link/simulation/results/ITSDN_n36_top_a1_3_i1.txt");
+my_output = new FileWriter("/dev/null");
 
 while(true){
     
@@ -938,8 +938,8 @@ log.testOK(); /* Report test success and quit */</script>
  */&#xD;
 &#xD;
 /* Make test automatically fail (timeout) after 100 simulated seconds */&#xD;
-//TIMEOUT(18000000);
-TIMEOUT(18000000);
+//TIMEOUT(1800000);
+TIMEOUT(1800000);
 &#xD;
 log.log("first mote output: '" + msg + "'\n");&#xD;
 &#xD;
@@ -968,4 +968,3 @@ log.testOK(); /* Report test success and quit */&#xD;
     <minimized>true</minimized>
   </plugin>
 </simconf>
-

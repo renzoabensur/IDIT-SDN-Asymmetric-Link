@@ -5,8 +5,8 @@ set -x
 
 # Simulation set configuration
 MIN_ITER=1
-MAX_ITER=1
-COOJA_INSTANCES=1 #max simulations running in parallel
+MAX_ITER=5
+COOJA_INSTANCES=5 #max simulations running in parallel
 COOJA_CURRENT_INSTANCE=1
 
 # nodes_v=(36 100)
@@ -87,7 +87,7 @@ for nnodes in "${nodes_v[@]}"; do
 
 					port=$((60000+$iter));
 
-					cooja_file="$simulation_files_dir"/"ITSDN_n36_assimetrico_fdff".csc
+					cooja_file="$simulation_files_dir"/"ITSDN_n36_simetrico_ffr_controlador_mais1".csc
 					#cooja_file="$simulation_files_dir"/${topo}_${nnodes}_2.csc
 					cooja_motes_out_file="$simulation_output_dir"/"ITSDN_n"$nnodes"_top_"$topo"_i"$iter'.txt'
 					cooja_log_file="$simulation_output_dir"/"ITSDN_log_n"$nnodes"_top_"$topo"_i"$iter'.txt'

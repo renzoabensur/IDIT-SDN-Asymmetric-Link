@@ -2663,8 +2663,8 @@ log.testOK(); /* Report test success and quit */</script>
  */&#xD;
 &#xD;
 /* Make test automatically fail (timeout) after 100 simulated seconds */&#xD;
-//TIMEOUT(1800000);&#xD;
-TIMEOUT(1800000);&#xD;
+//TIMEOUT(1800000);
+TIMEOUT(1800000);
 &#xD;
 log.log("first mote output: '" + msg + "'\n");&#xD;
 &#xD;

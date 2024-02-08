@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.11.0, 2024-01-10T23:21:09. -->
+<!-- Written by QtCreator 4.11.0, 2024-01-13T12:21:25. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
-  <value type="QByteArray">{e2a32803-fcc8-47a7-bb68-cfea2d402a5d}</value>
+  <value type="QByteArray">{784e02ce-eee5-4c16-987c-3e005bfb8085}</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -69,7 +69,7 @@
    <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/renzo/Documents/idit-sdn/controller-server/build-controller-pc-Desktop_Qt_5_9_9_GCC_64bit-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/renzo/Documents/IDIT-SDN-Asymmetric-Link/controller-server/build-controller-pc-Desktop_Qt_5_9_9_GCC_64bit-Debug</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -117,7 +117,7 @@
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/renzo/Documents/idit-sdn/controller-server/build-controller-pc-Desktop_Qt_5_9_9_GCC_64bit-Release</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/renzo/Documents/IDIT-SDN-Asymmetric-Link/controller-server/build-controller-pc-Desktop_Qt_5_9_9_GCC_64bit-Release</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -165,7 +165,7 @@
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/renzo/Documents/idit-sdn/controller-server/build-controller-pc-Desktop_Qt_5_9_9_GCC_64bit-Profile</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/renzo/Documents/IDIT-SDN-Asymmetric-Link/controller-server/build-controller-pc-Desktop_Qt_5_9_9_GCC_64bit-Profile</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -285,7 +285,6 @@
     </valuelist>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">controller-pc2</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/renzo/Documents/IDIT-SDN-Asymmetric-Link/controller-server/controller-pc/controller-pc.pro</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/renzo/Documents/IDIT-SDN-Asymmetric-Link/controller-server/controller-pc/controller-pc.pro</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
@@ -298,7 +297,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/renzo/Documents/idit-sdn/controller-server/build-controller-pc-Desktop_Qt_5_9_9_GCC_64bit-Debug</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/renzo/Documents/IDIT-SDN-Asymmetric-Link/controller-server/build-controller-pc-Desktop_Qt_5_9_9_GCC_64bit-Debug</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>

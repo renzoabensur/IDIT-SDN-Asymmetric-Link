@@ -54,7 +54,8 @@
 
 #define SENSING_AT_SECONDS 60
 #define IDS_TIMER 120
-#define ATTACK_TRIGGER 900 // Ataque inicia após 15 minutos
+// #define ATTACK_TRIGGER 900 // Ataque inicia após 15 minutos
+#define ATTACK_TRIGGER 14400 // Ataque inicia após 4 horas
 // #define ATTACK_TRIGGER 28800
 #ifdef ATTACK_SIXTY
 #define ATTACK_PERIOD 60
@@ -74,7 +75,7 @@ PROCESS(sdn_test_process, "Contiki SDN example process");
 AUTOSTART_PROCESSES(&sdn_test_process);
 
 
-uint16_t temp_flowid[4];
+uint16_t temp_flowid[9];
 static struct ctimer attack_timer;
 
 
@@ -105,7 +106,7 @@ static void create_false_flows() {
   
   uint8_t n;
 
-  for(n = 0; n <= 3; n++) {
+  for(n = 0; n <= 8; n++) {
     if ((temp_flowid[n] > 0)) {
       //printf("Removing flow: %u\n", temp_flowid[n]);
       sdn_dataflow_remove(temp_flowid[n]);  
@@ -129,64 +130,23 @@ static void create_false_flows() {
 
   n = 0;
 
-  // sdnaddr_t new_address1 =  {{0x04, 0x00}}; 
-
-  // sdnaddr_copy(&neighbor->neighbor_addr, &new_address1);
-
-  for(neighbor = sdn_neighbor_table_head(); neighbor != NULL; ) {
-    flowid_t random_flow;
-    neighbor_next = list_item_next(neighbor);
-    random_flow = 10 + (random_rand() % 1000);
-    temp_flowid[n] = random_flow;
-    sdn_dataflow_insert(random_flow, neighbor->neighbor_addr, SDN_ACTION_FORWARD);
-    printf("Sending data to false flow: %d, and to neighbor addr: %d\n", random_flow, neighbor->neighbor_addr);
-    // SDN_DEBUG("Sending data to false flow: %d\n", random_flow);
-    sdn_send((uint8_t*) false_data, 10, random_flow);
-    neighbor = neighbor_next;
-    n++;
-  }
-
-  // flowid_t random_flow;
-  // random_flow = 10 + (random_rand() % 1000);
-  // sdn_send_data_flow_request(random_flow);
-  // printf("Sending false flow request: %d\n", random_flow);
- 
-  // struct sdn_neighbor_entry *neighbor_copy_head;
-  // struct sdn_neighbor_entry *neighbor_copy_next;
-  // struct sdn_neighbor_entry *neighbor_next_next;
-  // struct sdn_neighbor_entry *neighbor_next_next_next;
-
-  // neighbor_copy_head = list_head(neighbors_copy_list.list);
-
-  // neighbor_copy_next = list_item_next(neighbor_copy_head);
-  // neighbor_next_next = list_item_next(neighbor_copy_next);
-  // neighbor_next_next_next = list_item_next(neighbor_next_next);
-
-  // sdnaddr_t new_address1 =  {{0x12, 0x00}}; //atacndo o 18
-  // sdnaddr_t new_address2 =  {{0x17, 0x00}};
-  // sdnaddr_t new_address3 =  {{0x1C, 0x00}};
-  // sdnaddr_t new_address4 =  {{0x1D, 0x00}};
-
-  // sdnaddr_copy(&neighbor_copy_head->neighbor_addr, &new_address1);
-  // sdnaddr_copy(&neighbor_copy_next->neighbor_addr, &new_address2);
-  // sdnaddr_copy(&neighbor_next_next->neighbor_addr, &new_address3);
-  // sdnaddr_copy(&neighbor_next_next_next->neighbor_addr, &new_address4);
-
-
-  // int j;
-
-  // for(j = 0; j <= 0 ; j++) {
+  // for(neighbor = sdn_neighbor_table_head(); neighbor != NULL; ) {
   //   flowid_t random_flow;
-  //   neighbor_copy_next = list_item_next(neighbor_copy_head);
+  //   neighbor_next = list_item_next(neighbor);
   //   random_flow = 10 + (random_rand() % 1000);
   //   temp_flowid[n] = random_flow;
-  //   sdn_dataflow_insert(random_flow, neighbor_copy_head->neighbor_addr, SDN_ACTION_FORWARD);
-  //   printf("Sending data to false flow: %d, and to neighbor addr: %d\n", random_flow, neighbor_copy_head->neighbor_addr);
+  //   sdn_dataflow_insert(random_flow, neighbor->neighbor_addr, SDN_ACTION_FORWARD);
+  //   printf("Sending data to false flow: %d, and to neighbor addr: %d\n", random_flow, neighbor->neighbor_addr);
   //   // SDN_DEBUG("Sending data to false flow: %d\n", random_flow);
   //   sdn_send((uint8_t*) false_data, 10, random_flow);
-  //   neighbor_copy_head = neighbor_copy_next;
+  //   neighbor = neighbor_next;
   //   n++;
   // }
+
+  flowid_t random_flow;
+  random_flow = 10 + (random_rand() % 1000);
+  sdn_send_data_flow_request(random_flow);
+  printf("Sending false flow request: %d\n", random_flow);
 
   ctimer_set(&attack_timer, ATTACK_PERIOD * CLOCK_SECOND, create_false_flows, NULL); 
 }
